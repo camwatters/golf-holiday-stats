@@ -1,0 +1,6593 @@
+{
+  "holidays": [
+    {
+      "holiday_id": 1,
+      "Country": "Portugal",
+      "Area": "Amendoeira",
+      "team_1": "Europe",
+      "team_2": "USA",
+      "team_1_captain": "Watters",
+      "team_2_captain": "J. Witt",
+      "long_drive": "O'Rourke",
+      "nearest_pin": "J. Witt"
+    },
+    {
+      "holiday_id": 2,
+      "Country": "Spain",
+      "Area": "Murcia",
+      "team_1": "Europe",
+      "team_2": "USA",
+      "team_1_captain": "D. Witt",
+      "team_2_captain": "McLachlan",
+      "long_drive": "O'Rourke",
+      "nearest_pin": "O'Rourke"
+    },
+    {
+      "holiday_id": 3,
+      "Country": "Spain",
+      "Area": "Malaga",
+      "team_1": "Europe",
+      "team_2": "USA",
+      "team_1_captain": "O'Rourke",
+      "team_2_captain": "Lowy",
+      "long_drive": "Cranham",
+      "nearest_pin": "Cranham"
+    },
+    {
+      "holiday_id": 4,
+      "Country": "Turkey",
+      "Area": "Belek",
+      "team_1": "Europe",
+      "team_2": "USA",
+      "team_1_captain": "Cranham",
+      "team_2_captain": "James",
+      "long_drive": "Condon",
+      "nearest_pin": "James"
+    }
+  ],
+  "rivalry": [
+    {
+      "holiday_id": 1,
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "europe_pts": 12.0,
+      "usa_pts": 11.0,
+      "winner": "Europe"
+    },
+    {
+      "holiday_id": 2,
+      "country": "Spain",
+      "area": "Murcia",
+      "europe_pts": 6.0,
+      "usa_pts": 6.0,
+      "winner": "Tie"
+    },
+    {
+      "holiday_id": 3,
+      "country": "Spain",
+      "area": "Malaga",
+      "europe_pts": 3.5,
+      "usa_pts": 8.5,
+      "winner": "USA"
+    },
+    {
+      "holiday_id": 4,
+      "country": "Turkey",
+      "area": "Belek",
+      "europe_pts": 5.5,
+      "usa_pts": 6.5,
+      "winner": "USA"
+    }
+  ],
+  "leaderboard": [
+    {
+      "player": "J. Witt",
+      "team": "USA",
+      "apps": 4,
+      "total_pts": 8.0,
+      "total_matches": 13,
+      "ppg": 0.615,
+      "scramble_pts": 1.0,
+      "scramble_n": 2,
+      "scramble_record": "1/0/0/1",
+      "fourball_pts": 2.5,
+      "fourball_n": 3,
+      "fourball_record": "2/0 (1 ties)",
+      "twoxtwo_pts": 1.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "1/2 (0 ties)",
+      "singles_pts": 2.5,
+      "singles_n": 4,
+      "singles_record": "2/1 (1 ties)",
+      "kingpin_pts": 1.0,
+      "kingpin_n": 1,
+      "kingpin_record": "1/0 (0 ties)",
+      "pairs_record": "3/2 (1 ties)",
+      "birdies": 2,
+      "chip_ins": 1,
+      "long_drive": 0,
+      "near_pin": 1,
+      "dotd": 0,
+      "birdies_faced": 3,
+      "chip_ins_faced": 2,
+      "win_streak": 2,
+      "holiday_wins": 0,
+      "rank": 1
+    },
+    {
+      "player": "Lowy",
+      "team": "USA",
+      "apps": 4,
+      "total_pts": 8.0,
+      "total_matches": 13,
+      "ppg": 0.615,
+      "scramble_pts": 0.0,
+      "scramble_n": 2,
+      "scramble_record": "0/0/0/2",
+      "fourball_pts": 1.0,
+      "fourball_n": 3,
+      "fourball_record": "1/2 (0 ties)",
+      "twoxtwo_pts": 3.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "3/0 (0 ties)",
+      "singles_pts": 4.0,
+      "singles_n": 5,
+      "singles_record": "4/1 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "4/2 (0 ties)",
+      "birdies": 1,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 0,
+      "birdies_faced": 7,
+      "chip_ins_faced": 2,
+      "win_streak": 5,
+      "holiday_wins": 1,
+      "rank": 1
+    },
+    {
+      "player": "Watters",
+      "team": "Europe",
+      "apps": 4,
+      "total_pts": 7.625,
+      "total_matches": 13,
+      "ppg": 0.587,
+      "scramble_pts": 0.625,
+      "scramble_n": 2,
+      "scramble_record": "0/1/1/0",
+      "fourball_pts": 3.5,
+      "fourball_n": 4,
+      "fourball_record": "3/0 (1 ties)",
+      "twoxtwo_pts": 0.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "0/3 (0 ties)",
+      "singles_pts": 3.5,
+      "singles_n": 4,
+      "singles_record": "3/0 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "3/3 (1 ties)",
+      "birdies": 2,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 1,
+      "chip_ins_faced": 0,
+      "win_streak": 2,
+      "holiday_wins": 0,
+      "rank": 3
+    },
+    {
+      "player": "James",
+      "team": "USA",
+      "apps": 4,
+      "total_pts": 7.333,
+      "total_matches": 13,
+      "ppg": 0.564,
+      "scramble_pts": 0.833,
+      "scramble_n": 2,
+      "scramble_record": "1/0/0/1",
+      "fourball_pts": 3.0,
+      "fourball_n": 4,
+      "fourball_record": "3/1 (0 ties)",
+      "twoxtwo_pts": 1.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "1/2 (0 ties)",
+      "singles_pts": 2.5,
+      "singles_n": 4,
+      "singles_record": "2/1 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "4/3 (0 ties)",
+      "birdies": 0,
+      "chip_ins": 1,
+      "long_drive": 0,
+      "near_pin": 1,
+      "dotd": 4,
+      "birdies_faced": 8,
+      "chip_ins_faced": 1,
+      "win_streak": 3,
+      "holiday_wins": 1,
+      "rank": 4
+    },
+    {
+      "player": "O'Rourke",
+      "team": "Europe",
+      "apps": 4,
+      "total_pts": 7.333,
+      "total_matches": 13,
+      "ppg": 0.564,
+      "scramble_pts": 1.333,
+      "scramble_n": 2,
+      "scramble_record": "1/1/0/0",
+      "fourball_pts": 1.5,
+      "fourball_n": 3,
+      "fourball_record": "1/1 (1 ties)",
+      "twoxtwo_pts": 2.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "2/1 (0 ties)",
+      "singles_pts": 2.5,
+      "singles_n": 5,
+      "singles_record": "2/2 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "3/2 (1 ties)",
+      "birdies": 11,
+      "chip_ins": 0,
+      "long_drive": 2,
+      "near_pin": 1,
+      "dotd": 0,
+      "birdies_faced": 4,
+      "chip_ins_faced": 0,
+      "win_streak": 2,
+      "holiday_wins": 1,
+      "rank": 4
+    },
+    {
+      "player": "Peters",
+      "team": "Europe",
+      "apps": 4,
+      "total_pts": 6.625,
+      "total_matches": 13,
+      "ppg": 0.51,
+      "scramble_pts": 0.625,
+      "scramble_n": 2,
+      "scramble_record": "0/1/1/0",
+      "fourball_pts": 3.0,
+      "fourball_n": 3,
+      "fourball_record": "3/0 (0 ties)",
+      "twoxtwo_pts": 2.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "2/1 (0 ties)",
+      "singles_pts": 1.0,
+      "singles_n": 4,
+      "singles_record": "1/3 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 1,
+      "kingpin_record": "0/1 (0 ties)",
+      "pairs_record": "5/1 (0 ties)",
+      "birdies": 4,
+      "chip_ins": 1,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 1,
+      "chip_ins_faced": 3,
+      "win_streak": 2,
+      "holiday_wins": 0,
+      "rank": 6
+    },
+    {
+      "player": "Condon",
+      "team": "USA",
+      "apps": 4,
+      "total_pts": 6.333,
+      "total_matches": 13,
+      "ppg": 0.487,
+      "scramble_pts": 1.833,
+      "scramble_n": 2,
+      "scramble_record": "2/0/0/0",
+      "fourball_pts": 1.0,
+      "fourball_n": 4,
+      "fourball_record": "1/3 (0 ties)",
+      "twoxtwo_pts": 2.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "2/1 (0 ties)",
+      "singles_pts": 1.5,
+      "singles_n": 4,
+      "singles_record": "1/2 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "3/4 (0 ties)",
+      "birdies": 3,
+      "chip_ins": 1,
+      "long_drive": 1,
+      "near_pin": 0,
+      "dotd": 5,
+      "birdies_faced": 2,
+      "chip_ins_faced": 1,
+      "win_streak": 2,
+      "holiday_wins": 0,
+      "rank": 7
+    },
+    {
+      "player": "Cranham",
+      "team": "Europe",
+      "apps": 4,
+      "total_pts": 6.125,
+      "total_matches": 13,
+      "ppg": 0.471,
+      "scramble_pts": 0.625,
+      "scramble_n": 2,
+      "scramble_record": "0/1/1/0",
+      "fourball_pts": 2.0,
+      "fourball_n": 4,
+      "fourball_record": "2/2 (0 ties)",
+      "twoxtwo_pts": 2.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "2/1 (0 ties)",
+      "singles_pts": 1.5,
+      "singles_n": 4,
+      "singles_record": "1/2 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "4/3 (0 ties)",
+      "birdies": 10,
+      "chip_ins": 0,
+      "long_drive": 1,
+      "near_pin": 1,
+      "dotd": 0,
+      "birdies_faced": 3,
+      "chip_ins_faced": 1,
+      "win_streak": 3,
+      "holiday_wins": 1,
+      "rank": 8
+    },
+    {
+      "player": "McLachlan",
+      "team": "USA",
+      "apps": 3,
+      "total_pts": 5.333,
+      "total_matches": 11,
+      "ppg": 0.485,
+      "scramble_pts": 1.833,
+      "scramble_n": 2,
+      "scramble_record": "2/0/0/0",
+      "fourball_pts": 1.5,
+      "fourball_n": 3,
+      "fourball_record": "1/1 (1 ties)",
+      "twoxtwo_pts": 0.0,
+      "twoxtwo_n": 2,
+      "twoxtwo_record": "0/2 (0 ties)",
+      "singles_pts": 2.0,
+      "singles_n": 4,
+      "singles_record": "2/2 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "1/3 (1 ties)",
+      "birdies": 2,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 3,
+      "chip_ins_faced": 2,
+      "win_streak": 2,
+      "holiday_wins": 1,
+      "rank": 9
+    },
+    {
+      "player": "D. Witt",
+      "team": "Europe",
+      "apps": 4,
+      "total_pts": 4.833,
+      "total_matches": 13,
+      "ppg": 0.372,
+      "scramble_pts": 1.333,
+      "scramble_n": 2,
+      "scramble_record": "1/1/0/0",
+      "fourball_pts": 2.0,
+      "fourball_n": 4,
+      "fourball_record": "2/2 (0 ties)",
+      "twoxtwo_pts": 0.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "0/3 (0 ties)",
+      "singles_pts": 1.5,
+      "singles_n": 4,
+      "singles_record": "1/2 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "2/5 (0 ties)",
+      "birdies": 0,
+      "chip_ins": 2,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 2,
+      "chip_ins_faced": 1,
+      "win_streak": 1,
+      "holiday_wins": 0,
+      "rank": 10
+    },
+    {
+      "player": "S. Barker",
+      "team": "USA",
+      "apps": 4,
+      "total_pts": 4.5,
+      "total_matches": 13,
+      "ppg": 0.346,
+      "scramble_pts": 0.0,
+      "scramble_n": 2,
+      "scramble_record": "0/0/0/2",
+      "fourball_pts": 0.0,
+      "fourball_n": 4,
+      "fourball_record": "0/4 (0 ties)",
+      "twoxtwo_pts": 2.0,
+      "twoxtwo_n": 3,
+      "twoxtwo_record": "2/1 (0 ties)",
+      "singles_pts": 2.5,
+      "singles_n": 4,
+      "singles_record": "2/1 (1 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "2/5 (0 ties)",
+      "birdies": 0,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 2,
+      "birdies_faced": 5,
+      "chip_ins_faced": 1,
+      "win_streak": 2,
+      "holiday_wins": 0,
+      "rank": 11
+    },
+    {
+      "player": "Mulligan",
+      "team": "Europe",
+      "apps": 2,
+      "total_pts": 3.333,
+      "total_matches": 7,
+      "ppg": 0.476,
+      "scramble_pts": 1.333,
+      "scramble_n": 2,
+      "scramble_record": "1/1/0/0",
+      "fourball_pts": 1.0,
+      "fourball_n": 2,
+      "fourball_record": "1/1 (0 ties)",
+      "twoxtwo_pts": 1.0,
+      "twoxtwo_n": 1,
+      "twoxtwo_record": "1/0 (0 ties)",
+      "singles_pts": 0.0,
+      "singles_n": 2,
+      "singles_record": "0/2 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "2/1 (0 ties)",
+      "birdies": 0,
+      "chip_ins": 1,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 0,
+      "chip_ins_faced": 0,
+      "win_streak": 1,
+      "holiday_wins": 0,
+      "rank": 12
+    },
+    {
+      "player": "Brown",
+      "team": "USA",
+      "apps": 1,
+      "total_pts": 2.0,
+      "total_matches": 3,
+      "ppg": 0.667,
+      "scramble_pts": 0.0,
+      "scramble_n": 0,
+      "scramble_record": "0/0/0/0",
+      "fourball_pts": 0.0,
+      "fourball_n": 1,
+      "fourball_record": "0/1 (0 ties)",
+      "twoxtwo_pts": 1.0,
+      "twoxtwo_n": 1,
+      "twoxtwo_record": "1/0 (0 ties)",
+      "singles_pts": 1.0,
+      "singles_n": 1,
+      "singles_record": "1/0 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "1/1 (0 ties)",
+      "birdies": 3,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 5,
+      "chip_ins_faced": 0,
+      "win_streak": 1,
+      "holiday_wins": 0,
+      "rank": 13
+    },
+    {
+      "player": "Rogers",
+      "team": "Europe",
+      "apps": 2,
+      "total_pts": 1.625,
+      "total_matches": 7,
+      "ppg": 0.232,
+      "scramble_pts": 0.625,
+      "scramble_n": 2,
+      "scramble_record": "0/1/1/0",
+      "fourball_pts": 0.0,
+      "fourball_n": 1,
+      "fourball_record": "0/1 (0 ties)",
+      "twoxtwo_pts": 1.0,
+      "twoxtwo_n": 1,
+      "twoxtwo_record": "1/0 (0 ties)",
+      "singles_pts": 0.0,
+      "singles_n": 2,
+      "singles_record": "0/2 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 1,
+      "kingpin_record": "0/1 (0 ties)",
+      "pairs_record": "1/1 (0 ties)",
+      "birdies": 0,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 1,
+      "birdies_faced": 0,
+      "chip_ins_faced": 0,
+      "win_streak": 1,
+      "holiday_wins": 0,
+      "rank": 14
+    },
+    {
+      "player": "J. Barker",
+      "team": "Europe",
+      "apps": 1,
+      "total_pts": 0.0,
+      "total_matches": 3,
+      "ppg": 0.0,
+      "scramble_pts": 0.0,
+      "scramble_n": 0,
+      "scramble_record": "0/0/0/0",
+      "fourball_pts": 0.0,
+      "fourball_n": 1,
+      "fourball_record": "0/1 (0 ties)",
+      "twoxtwo_pts": 0.0,
+      "twoxtwo_n": 1,
+      "twoxtwo_record": "0/1 (0 ties)",
+      "singles_pts": 0.0,
+      "singles_n": 1,
+      "singles_record": "0/1 (0 ties)",
+      "kingpin_pts": 0.0,
+      "kingpin_n": 0,
+      "kingpin_record": "0/0 (0 ties)",
+      "pairs_record": "0/2 (0 ties)",
+      "birdies": 1,
+      "chip_ins": 1,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 0,
+      "birdies_faced": 1,
+      "chip_ins_faced": 0,
+      "win_streak": 0,
+      "holiday_wins": 0,
+      "rank": 15
+    }
+  ],
+  "player_matches": [
+    {
+      "player": "James",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan",
+        "Condon"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James",
+        "Condon"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Condon",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James",
+        "McLachlan"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt",
+        "Mulligan"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke",
+        "Mulligan"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.8333333333,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke",
+        "D. Witt"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Watters",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.25,
+      "result": "pos3",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters",
+        "Rogers",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Peters",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.25,
+      "result": "pos3",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Rogers",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Rogers",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.25,
+      "result": "pos3",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Peters",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Cranham",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.25,
+      "result": "pos3",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Peters",
+        "Rogers"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Lowy",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt",
+        "S. Barker"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy",
+        "S. Barker"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 1,
+      "holiday_id": 1,
+      "match_id": 1,
+      "date": "2022-05-26",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy",
+        "J. Witt"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Watters",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 2,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Mulligan"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Condon"
+      ]
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 2,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Condon"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 2,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "Watters",
+        "Mulligan"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 2,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Watters",
+        "Mulligan"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 3,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "McLachlan",
+        "James"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 3,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "McLachlan",
+        "James"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 3,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 2,
+      "holiday_id": 1,
+      "match_id": 3,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 3,
+      "holiday_id": 1,
+      "match_id": 4,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 3,
+      "holiday_id": 1,
+      "match_id": 4,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "O'Rourke"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 4,
+      "holiday_id": 1,
+      "match_id": 5,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Kingpin",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5.5-7",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Rogers"
+      ],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "Rogers",
+      "event_id": 4,
+      "holiday_id": 1,
+      "match_id": 5,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Kingpin",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5.5-7",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 4,
+      "holiday_id": 1,
+      "match_id": 5,
+      "date": "2022-05-27",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Kingpin",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5.5-7",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Peters",
+        "Rogers"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 6,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 6,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Watters"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 7,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 7,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Peters"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 8,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 8,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 9,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 9,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Mulligan"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 10,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "James"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 10,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Rogers",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 11,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 11,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Rogers"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 12,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Condon"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 5,
+      "holiday_id": 1,
+      "match_id": 12,
+      "date": "2022-05-28",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "Faldo",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "O'Rourke"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt",
+        "Condon"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan",
+        "Condon"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Condon",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "pos1",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan",
+        "J. Witt"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt",
+        "Mulligan"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke",
+        "Mulligan"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke",
+        "D. Witt"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Watters",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.375,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters",
+        "Rogers",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Peters",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.375,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Rogers",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Rogers",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.375,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Peters",
+        "Cranham"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Cranham",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "Europe",
+      "pts": 0.375,
+      "result": "pos2",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters",
+        "Peters",
+        "Rogers"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Lowy",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker",
+        "James"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy",
+        "James"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "James",
+      "event_id": 6,
+      "holiday_id": 1,
+      "match_id": 13,
+      "date": "2022-05-29",
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "course": "O'Connor",
+      "format": "Texas Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "pos4",
+      "score": "",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy",
+        "S. Barker"
+      ],
+      "opponents": []
+    },
+    {
+      "player": "Peters",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 14,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "6&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "James",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 14,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "6&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "James",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 14,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "6&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Peters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 14,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "6&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "Peters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 15,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Rogers"
+      ],
+      "opponents": [
+        "McLachlan",
+        "Condon"
+      ]
+    },
+    {
+      "player": "Rogers",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 15,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "McLachlan",
+        "Condon"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 15,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Rogers"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 15,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Rogers"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 16,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "J. Witt",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 16,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "J. Witt",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 16,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Watters"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 7,
+      "holiday_id": 2,
+      "match_id": 16,
+      "date": "2023-05-25",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Watters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 17,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "J. Witt",
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 17,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "J. Witt",
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 17,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Watters"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 17,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Watters"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 18,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 18,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 18,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "Peters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 18,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Peters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 19,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Rogers"
+      ],
+      "opponents": [
+        "James",
+        "Condon"
+      ]
+    },
+    {
+      "player": "Rogers",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 19,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "James",
+        "Condon"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 19,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Rogers"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 8,
+      "holiday_id": 2,
+      "match_id": 19,
+      "date": "2023-05-26",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Hacienda del Almo",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Rogers"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 20,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 20,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 21,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "James"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 21,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Peters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 22,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&2",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 22,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "O'Rourke"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 23,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 23,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Rogers",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 24,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 24,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Rogers"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 25,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Condon"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 9,
+      "holiday_id": 2,
+      "match_id": 25,
+      "date": "2023-05-27",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Watters"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 26,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "James",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 26,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "James",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 26,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "Cranham",
+        "Peters"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 26,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "Cranham",
+        "Peters"
+      ]
+    },
+    {
+      "player": "J. Barker",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 27,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "Condon",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 27,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Barker"
+      ],
+      "opponents": [
+        "Condon",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 27,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "J. Barker",
+        "Watters"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 27,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "J. Barker",
+        "Watters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 28,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "Brown",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 28,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "Brown",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Brown",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 28,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 12,
+      "holiday_id": 3,
+      "match_id": 28,
+      "date": "2024-09-12",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Calanova",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Brown"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 29,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&2",
+      "birdies": 3,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "Brown",
+        "James"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 29,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "Brown",
+        "James"
+      ]
+    },
+    {
+      "player": "Brown",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 29,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "Cranham",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 29,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Brown"
+      ],
+      "opponents": [
+        "Cranham",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 30,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "7&5",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "J. Barker"
+      ],
+      "opponents": [
+        "Lowy",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Barker",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 30,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "Lowy",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 30,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "7&5",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "J. Barker"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 30,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "J. Barker"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 31,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "Condon",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 31,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "Condon",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 31,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Peters",
+        "Watters"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 13,
+      "holiday_id": 3,
+      "match_id": 31,
+      "date": "2024-09-13",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "El Chaparral",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "Peters",
+        "Watters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 32,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 32,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "O'Rourke"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 33,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "James"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 33,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Watters"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 34,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 34,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Peters"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 35,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Condon"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 35,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 36,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 2,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Brown"
+      ]
+    },
+    {
+      "player": "Brown",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 36,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 3,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Cranham"
+      ]
+    },
+    {
+      "player": "J. Barker",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 37,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 1,
+      "chip_ins": 1,
+      "partners": [],
+      "opponents": [
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 14,
+      "holiday_id": 3,
+      "match_id": 37,
+      "date": "2024-09-15",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "La Cala (Asia)",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "J. Barker"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 38,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "James",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 38,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "James",
+        "Lowy"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 38,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Peters"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 38,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "D. Witt",
+        "Peters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 39,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Mulligan"
+      ],
+      "opponents": [
+        "McLachlan",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 39,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "McLachlan",
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 39,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Mulligan"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 39,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "5&4",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "Mulligan"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 40,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Condon"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 40,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "S. Barker",
+        "Condon"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 40,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "Watters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 15,
+      "holiday_id": 4,
+      "match_id": 40,
+      "date": "2025-05-14",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "2x2 Scramble",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Watters",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 41,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "Peters"
+      ],
+      "opponents": [
+        "Lowy",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 41,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&2",
+      "birdies": 2,
+      "chip_ins": 0,
+      "partners": [
+        "Watters"
+      ],
+      "opponents": [
+        "Lowy",
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 41,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "S. Barker"
+      ],
+      "opponents": [
+        "Watters",
+        "Peters"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 41,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&2",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Lowy"
+      ],
+      "opponents": [
+        "Watters",
+        "Peters"
+      ]
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 42,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "Cranham"
+      ],
+      "opponents": [
+        "J. Witt",
+        "James"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 42,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "7&5",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "Mulligan"
+      ],
+      "opponents": [
+        "J. Witt",
+        "James"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 42,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "James"
+      ],
+      "opponents": [
+        "Mulligan",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 42,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "7&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "J. Witt"
+      ],
+      "opponents": [
+        "Mulligan",
+        "Cranham"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 43,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "D. Witt"
+      ],
+      "opponents": [
+        "Condon",
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 43,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [
+        "O'Rourke"
+      ],
+      "opponents": [
+        "Condon",
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 43,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [
+        "McLachlan"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 16,
+      "holiday_id": 4,
+      "match_id": 43,
+      "date": "2025-05-15",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Carya",
+      "format": "Fourball",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [
+        "Condon"
+      ],
+      "opponents": [
+        "O'Rourke",
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Cranham",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 44,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "2&1",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "James"
+      ]
+    },
+    {
+      "player": "James",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 44,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "2&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Cranham"
+      ]
+    },
+    {
+      "player": "Peters",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 45,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "4&3",
+      "birdies": 1,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Condon"
+      ]
+    },
+    {
+      "player": "Condon",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 45,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "4&3",
+      "birdies": 0,
+      "chip_ins": 1,
+      "partners": [],
+      "opponents": [
+        "Peters"
+      ]
+    },
+    {
+      "player": "O'Rourke",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 46,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "3&1",
+      "birdies": 3,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Lowy"
+      ]
+    },
+    {
+      "player": "Lowy",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 46,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "3&1",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "O'Rourke"
+      ]
+    },
+    {
+      "player": "Watters",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 47,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "6&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "McLachlan"
+      ]
+    },
+    {
+      "player": "McLachlan",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 47,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "6&5",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Watters"
+      ]
+    },
+    {
+      "player": "D. Witt",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 48,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "S. Barker"
+      ]
+    },
+    {
+      "player": "S. Barker",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 48,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 0.5,
+      "result": "Halved",
+      "score": "A/S",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "D. Witt"
+      ]
+    },
+    {
+      "player": "Mulligan",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 49,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "Europe",
+      "pts": 0.0,
+      "result": "Loss",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "J. Witt"
+      ]
+    },
+    {
+      "player": "J. Witt",
+      "event_id": 17,
+      "holiday_id": 4,
+      "match_id": 49,
+      "date": "2025-05-16",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Kaya Belek",
+      "format": "Singles",
+      "team": "USA",
+      "pts": 1.0,
+      "result": "Win",
+      "score": "1UP",
+      "birdies": 0,
+      "chip_ins": 0,
+      "partners": [],
+      "opponents": [
+        "Mulligan"
+      ]
+    }
+  ],
+  "green_jackets": [
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Watters",
+      "rank": "1",
+      "score": 39.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Peters",
+      "rank": "2",
+      "score": 34.0,
+      "chip_ins": 0.0,
+      "birdies": 1.0
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "J. Witt",
+      "rank": "3",
+      "score": 34.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "James",
+      "rank": "4",
+      "score": 34.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Condon",
+      "rank": "5",
+      "score": 32.0,
+      "chip_ins": 0.0,
+      "birdies": 2.0
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Lowy",
+      "rank": "6",
+      "score": 31.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "S. Barker",
+      "rank": "7",
+      "score": 29.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Cranham",
+      "rank": "8",
+      "score": 28.0,
+      "chip_ins": 0.0,
+      "birdies": 1.0
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "O'Rourke",
+      "rank": "9",
+      "score": 28.0,
+      "chip_ins": 0.0,
+      "birdies": 3.0
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "McLachlan",
+      "rank": "10",
+      "score": 23.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "Mulligan",
+      "rank": "11",
+      "score": 23.0,
+      "chip_ins": 0.0,
+      "birdies": null
+    },
+    {
+      "event_id": 18,
+      "holiday_id": 4,
+      "date": "2025-05-17",
+      "country": "Turkey",
+      "area": "Belek",
+      "course": "Montgomerie",
+      "player": "D. Witt",
+      "rank": "Cup-tied",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Lowy",
+      "rank": "1",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "James",
+      "rank": "2",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Peters",
+      "rank": "3",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Condon",
+      "rank": "4",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Brown",
+      "rank": "5",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "S. Barker",
+      "rank": "6",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "J. Barker",
+      "rank": "7",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Cranham",
+      "rank": "8",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "J. Witt",
+      "rank": "9",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "O'Rourke",
+      "rank": "10",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "D. Witt",
+      "rank": "11",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 11,
+      "holiday_id": 3,
+      "date": "2024-09-11",
+      "country": "Spain",
+      "area": "Malaga",
+      "course": "Miguel Angel Jimenez Academy",
+      "player": "Watters",
+      "rank": "12",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "D. Witt",
+      "rank": "1",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Watters",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "O'Rourke",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": 1.0
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Lowy",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "J. Witt",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Peters",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "McLachlan",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Cranham",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "James",
+      "rank": "Unknown",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Rogers",
+      "rank": "DNS",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "Condon",
+      "rank": "DNS",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    },
+    {
+      "event_id": 10,
+      "holiday_id": 2,
+      "date": "2023-05-28",
+      "country": "Spain",
+      "area": "Murcia",
+      "course": "Saurines",
+      "player": "S. Barker",
+      "rank": "DNS",
+      "score": null,
+      "chip_ins": null,
+      "birdies": null
+    }
+  ],
+  "awards": [
+    {
+      "holiday_id": 1,
+      "country": "Portugal",
+      "area": "Amendoeira",
+      "long_drive": "O'Rourke",
+      "near_pin": "J. Witt",
+      "matchdays": [
+        {
+          "Date": "2022-05-26",
+          "Course": "Faldo",
+          "DOTD": "McLachlan",
+          "Description": "Copying AJ smashing the ball into a tree and it going backwards"
+        },
+        {
+          "Date": "2022-05-27",
+          "Course": "O'Connor",
+          "DOTD": "Condon",
+          "Description": "Driving the ball at the buggie in front"
+        },
+        {
+          "Date": "2022-05-28",
+          "Course": "Faldo",
+          "DOTD": "James",
+          "Description": "Getting incredibly sunburnt and hiding in the bushes on the 18th"
+        },
+        {
+          "Date": "2022-05-28",
+          "Course": "Faldo",
+          "DOTD": "Rogers",
+          "Description": "Missing the ball on the first in front of everyone"
+        },
+        {
+          "Date": "2022-05-29",
+          "Course": "O'Connor",
+          "DOTD": "Condon",
+          "Description": "Scorecard fuck up"
+        }
+      ]
+    },
+    {
+      "holiday_id": 2,
+      "country": "Spain",
+      "area": "Murcia",
+      "long_drive": "O'Rourke",
+      "near_pin": "O'Rourke",
+      "matchdays": [
+        {
+          "Date": "2023-05-25",
+          "Course": "Hacienda del Almo",
+          "DOTD": "S. Barker",
+          "Description": "Throwing up off the apartment balconies"
+        },
+        {
+          "Date": "2023-05-26",
+          "Course": "Hacienda del Almo",
+          "DOTD": "Condon",
+          "Description": "Pissing on the course"
+        },
+        {
+          "Date": "2023-05-27",
+          "Course": "Saurines",
+          "DOTD": "James",
+          "Description": "Letting Cal win a hole with an 8"
+        },
+        {
+          "Date": "2023-05-28",
+          "Course": "Saurines",
+          "DOTD": "Peters",
+          "Description": "Running over Cranham in the buggie"
+        }
+      ]
+    },
+    {
+      "holiday_id": 3,
+      "country": "Spain",
+      "area": "Malaga",
+      "long_drive": "Cranham",
+      "near_pin": "Cranham",
+      "matchdays": [
+        {
+          "Date": "2024-09-11",
+          "Course": "Miguel Angel Jimenez Academy",
+          "DOTD": "S. Barker",
+          "Description": "Pissing on the course in a well"
+        },
+        {
+          "Date": "2024-09-12",
+          "Course": "Calanova",
+          "DOTD": "D. Witt",
+          "Description": "Being sick on the course"
+        },
+        {
+          "Date": "2024-09-13",
+          "Course": "El Chaparral",
+          "DOTD": "James",
+          "Description": "Missing tee shot again"
+        },
+        {
+          "Date": "2024-09-14",
+          "Course": "Marbella",
+          "DOTD": "Brown",
+          "Description": "Shaking the tree"
+        },
+        {
+          "Date": "2024-09-15",
+          "Course": "La Cala (Asia)",
+          "DOTD": "Watters",
+          "Description": "Chair in sea, hit house"
+        }
+      ]
+    },
+    {
+      "holiday_id": 4,
+      "country": "Turkey",
+      "area": "Belek",
+      "long_drive": "Condon",
+      "near_pin": "James",
+      "matchdays": [
+        {
+          "Date": "2025-05-14",
+          "Course": "Kaya Belek",
+          "DOTD": "James",
+          "Description": "Smashing everything on the table"
+        },
+        {
+          "Date": "2025-05-15",
+          "Course": "Carya",
+          "DOTD": "Condon",
+          "Description": "Pissing on the course"
+        },
+        {
+          "Date": "2025-05-16",
+          "Course": "Kaya Belek",
+          "DOTD": "Mulligan",
+          "Description": "Javelining club down the fairway and forgetting about it with it stuck in the ground"
+        },
+        {
+          "Date": "2025-05-17",
+          "Course": "Montgomerie",
+          "DOTD": "Condon",
+          "Description": "Disobeying cabbie"
+        }
+      ]
+    }
+  ],
+  "birdie_by_holiday": [
+    {
+      "holiday_id": 1,
+      "player": "Condon",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 1,
+      "player": "Cranham",
+      "birdies": 2
+    },
+    {
+      "holiday_id": 1,
+      "player": "D. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "J. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "James",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "Lowy",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "McLachlan",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "Mulligan",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "O'Rourke",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "Peters",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "Rogers",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "S. Barker",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 1,
+      "player": "Watters",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "Condon",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "Cranham",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "D. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "J. Witt",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 2,
+      "player": "James",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "Lowy",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "McLachlan",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 2,
+      "player": "O'Rourke",
+      "birdies": 3
+    },
+    {
+      "holiday_id": 2,
+      "player": "Peters",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "Rogers",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "S. Barker",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 2,
+      "player": "Watters",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "Brown",
+      "birdies": 3
+    },
+    {
+      "holiday_id": 3,
+      "player": "Condon",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "Cranham",
+      "birdies": 5
+    },
+    {
+      "holiday_id": 3,
+      "player": "D. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "J. Barker",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 3,
+      "player": "J. Witt",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 3,
+      "player": "James",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "Lowy",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 3,
+      "player": "O'Rourke",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 3,
+      "player": "Peters",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "S. Barker",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 3,
+      "player": "Watters",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 4,
+      "player": "Condon",
+      "birdies": 2
+    },
+    {
+      "holiday_id": 4,
+      "player": "Cranham",
+      "birdies": 3
+    },
+    {
+      "holiday_id": 4,
+      "player": "D. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "J. Witt",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "James",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "Lowy",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "McLachlan",
+      "birdies": 1
+    },
+    {
+      "holiday_id": 4,
+      "player": "Mulligan",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "O'Rourke",
+      "birdies": 7
+    },
+    {
+      "holiday_id": 4,
+      "player": "Peters",
+      "birdies": 4
+    },
+    {
+      "holiday_id": 4,
+      "player": "S. Barker",
+      "birdies": 0
+    },
+    {
+      "holiday_id": 4,
+      "player": "Watters",
+      "birdies": 1
+    }
+  ],
+  "pair_stats": [
+    {
+      "player": "Brown",
+      "partner": "James",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Brown",
+      "partner": "S. Barker",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "Condon",
+      "partner": "J. Witt",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "Condon",
+      "partner": "James",
+      "matches": 2,
+      "pts": 1.833,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "Condon",
+      "partner": "Lowy",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "Condon",
+      "partner": "McLachlan",
+      "matches": 4,
+      "pts": 1.833,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 4,
+      "losses": 0
+    },
+    {
+      "player": "Condon",
+      "partner": "S. Barker",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333,
+      "wins": 1,
+      "halves": 0,
+      "losses": 2
+    },
+    {
+      "player": "Cranham",
+      "partner": "D. Witt",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Cranham",
+      "partner": "Mulligan",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Cranham",
+      "partner": "Peters",
+      "matches": 5,
+      "pts": 3.625,
+      "win_pct": 0.6,
+      "wins": 3,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Cranham",
+      "partner": "Rogers",
+      "matches": 2,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Cranham",
+      "partner": "Watters",
+      "matches": 3,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 2
+    },
+    {
+      "player": "D. Witt",
+      "partner": "Cranham",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "D. Witt",
+      "partner": "Mulligan",
+      "matches": 2,
+      "pts": 1.333,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "D. Witt",
+      "partner": "O'Rourke",
+      "matches": 4,
+      "pts": 2.333,
+      "win_pct": 0.25,
+      "wins": 1,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "D. Witt",
+      "partner": "Peters",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "D. Witt",
+      "partner": "Rogers",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "D. Witt",
+      "partner": "Watters",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "J. Barker",
+      "partner": "O'Rourke",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "J. Barker",
+      "partner": "Watters",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "J. Witt",
+      "partner": "Condon",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "J. Witt",
+      "partner": "James",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "J. Witt",
+      "partner": "Lowy",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667,
+      "wins": 2,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "J. Witt",
+      "partner": "McLachlan",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "J. Witt",
+      "partner": "S. Barker",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "James",
+      "partner": "Brown",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "James",
+      "partner": "Condon",
+      "matches": 2,
+      "pts": 1.833,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "James",
+      "partner": "J. Witt",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "James",
+      "partner": "Lowy",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "James",
+      "partner": "McLachlan",
+      "matches": 2,
+      "pts": 1.833,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "James",
+      "partner": "S. Barker",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 2
+    },
+    {
+      "player": "Lowy",
+      "partner": "Condon",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "Lowy",
+      "partner": "J. Witt",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667,
+      "wins": 2,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Lowy",
+      "partner": "James",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Lowy",
+      "partner": "S. Barker",
+      "matches": 4,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 4
+    },
+    {
+      "player": "McLachlan",
+      "partner": "Condon",
+      "matches": 4,
+      "pts": 1.833,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 4,
+      "losses": 0
+    },
+    {
+      "player": "McLachlan",
+      "partner": "J. Witt",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "McLachlan",
+      "partner": "James",
+      "matches": 2,
+      "pts": 1.833,
+      "win_pct": 0.5,
+      "wins": 1,
+      "halves": 2,
+      "losses": 0
+    },
+    {
+      "player": "Mulligan",
+      "partner": "Cranham",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Mulligan",
+      "partner": "D. Witt",
+      "matches": 2,
+      "pts": 1.333,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "Mulligan",
+      "partner": "O'Rourke",
+      "matches": 3,
+      "pts": 2.333,
+      "win_pct": 0.333,
+      "wins": 1,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "Mulligan",
+      "partner": "Watters",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "O'Rourke",
+      "partner": "D. Witt",
+      "matches": 4,
+      "pts": 2.333,
+      "win_pct": 0.25,
+      "wins": 1,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "O'Rourke",
+      "partner": "J. Barker",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "O'Rourke",
+      "partner": "Mulligan",
+      "matches": 3,
+      "pts": 2.333,
+      "win_pct": 0.333,
+      "wins": 1,
+      "halves": 3,
+      "losses": 0
+    },
+    {
+      "player": "O'Rourke",
+      "partner": "Rogers",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "O'Rourke",
+      "partner": "Watters",
+      "matches": 1,
+      "pts": 0.5,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 0
+    },
+    {
+      "player": "Peters",
+      "partner": "Cranham",
+      "matches": 5,
+      "pts": 3.625,
+      "win_pct": 0.6,
+      "wins": 3,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Peters",
+      "partner": "D. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Peters",
+      "partner": "Rogers",
+      "matches": 3,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 2
+    },
+    {
+      "player": "Peters",
+      "partner": "Watters",
+      "matches": 4,
+      "pts": 2.625,
+      "win_pct": 0.5,
+      "wins": 2,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Rogers",
+      "partner": "Cranham",
+      "matches": 2,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Rogers",
+      "partner": "D. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Rogers",
+      "partner": "O'Rourke",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "Rogers",
+      "partner": "Peters",
+      "matches": 3,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 2
+    },
+    {
+      "player": "Rogers",
+      "partner": "Watters",
+      "matches": 2,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "S. Barker",
+      "partner": "Brown",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "S. Barker",
+      "partner": "Condon",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333,
+      "wins": 1,
+      "halves": 0,
+      "losses": 2
+    },
+    {
+      "player": "S. Barker",
+      "partner": "J. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "S. Barker",
+      "partner": "James",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 2
+    },
+    {
+      "player": "S. Barker",
+      "partner": "Lowy",
+      "matches": 4,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 4
+    },
+    {
+      "player": "Watters",
+      "partner": "Cranham",
+      "matches": 3,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 2
+    },
+    {
+      "player": "Watters",
+      "partner": "D. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Watters",
+      "partner": "J. Barker",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 0,
+      "losses": 1
+    },
+    {
+      "player": "Watters",
+      "partner": "Mulligan",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0,
+      "wins": 1,
+      "halves": 0,
+      "losses": 0
+    },
+    {
+      "player": "Watters",
+      "partner": "O'Rourke",
+      "matches": 1,
+      "pts": 0.5,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 0
+    },
+    {
+      "player": "Watters",
+      "partner": "Peters",
+      "matches": 4,
+      "pts": 2.625,
+      "win_pct": 0.5,
+      "wins": 2,
+      "halves": 1,
+      "losses": 1
+    },
+    {
+      "player": "Watters",
+      "partner": "Rogers",
+      "matches": 2,
+      "pts": 0.625,
+      "win_pct": 0.0,
+      "wins": 0,
+      "halves": 1,
+      "losses": 1
+    }
+  ],
+  "vs_stats": [
+    {
+      "player": "Brown",
+      "opponent": "Cranham",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Brown",
+      "opponent": "D. Witt",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Brown",
+      "opponent": "O'Rourke",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "Cranham",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "D. Witt",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "Condon",
+      "opponent": "J. Barker",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "Mulligan",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "O'Rourke",
+      "matches": 3,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "Peters",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Condon",
+      "opponent": "Rogers",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Condon",
+      "opponent": "Watters",
+      "matches": 5,
+      "pts": 2.0,
+      "win_pct": 0.4
+    },
+    {
+      "player": "Cranham",
+      "opponent": "Brown",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Cranham",
+      "opponent": "Condon",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Cranham",
+      "opponent": "J. Witt",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Cranham",
+      "opponent": "James",
+      "matches": 7,
+      "pts": 4.0,
+      "win_pct": 0.571
+    },
+    {
+      "player": "Cranham",
+      "opponent": "Lowy",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Cranham",
+      "opponent": "McLachlan",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Cranham",
+      "opponent": "S. Barker",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "Brown",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "Condon",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "J. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "James",
+      "matches": 4,
+      "pts": 1.0,
+      "win_pct": 0.25
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "Lowy",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "McLachlan",
+      "matches": 4,
+      "pts": 2.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "D. Witt",
+      "opponent": "S. Barker",
+      "matches": 2,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "J. Barker",
+      "opponent": "Condon",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "J. Barker",
+      "opponent": "J. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "J. Barker",
+      "opponent": "Lowy",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "J. Barker",
+      "opponent": "S. Barker",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "Cranham",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "D. Witt",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "J. Barker",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "Mulligan",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "O'Rourke",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "Peters",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "Rogers",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "J. Witt",
+      "opponent": "Watters",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "James",
+      "opponent": "Cranham",
+      "matches": 7,
+      "pts": 3.0,
+      "win_pct": 0.429
+    },
+    {
+      "player": "James",
+      "opponent": "D. Witt",
+      "matches": 4,
+      "pts": 3.0,
+      "win_pct": 0.75
+    },
+    {
+      "player": "James",
+      "opponent": "Mulligan",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "James",
+      "opponent": "Peters",
+      "matches": 4,
+      "pts": 2.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "James",
+      "opponent": "Rogers",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "James",
+      "opponent": "Watters",
+      "matches": 1,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Lowy",
+      "opponent": "Cranham",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Lowy",
+      "opponent": "D. Witt",
+      "matches": 2,
+      "pts": 2.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Lowy",
+      "opponent": "J. Barker",
+      "matches": 2,
+      "pts": 2.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Lowy",
+      "opponent": "O'Rourke",
+      "matches": 4,
+      "pts": 3.0,
+      "win_pct": 0.75
+    },
+    {
+      "player": "Lowy",
+      "opponent": "Peters",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Lowy",
+      "opponent": "Rogers",
+      "matches": 2,
+      "pts": 2.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Lowy",
+      "opponent": "Watters",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "Cranham",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "D. Witt",
+      "matches": 4,
+      "pts": 2.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "Mulligan",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "O'Rourke",
+      "matches": 4,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "Peters",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "Rogers",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "McLachlan",
+      "opponent": "Watters",
+      "matches": 2,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Mulligan",
+      "opponent": "Condon",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Mulligan",
+      "opponent": "J. Witt",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Mulligan",
+      "opponent": "James",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Mulligan",
+      "opponent": "McLachlan",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Mulligan",
+      "opponent": "S. Barker",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "Brown",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "Condon",
+      "matches": 3,
+      "pts": 2.5,
+      "win_pct": 0.667
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "J. Witt",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "Lowy",
+      "matches": 4,
+      "pts": 1.0,
+      "win_pct": 0.25
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "McLachlan",
+      "matches": 4,
+      "pts": 3.5,
+      "win_pct": 0.75
+    },
+    {
+      "player": "O'Rourke",
+      "opponent": "S. Barker",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Peters",
+      "opponent": "Condon",
+      "matches": 2,
+      "pts": 2.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Peters",
+      "opponent": "J. Witt",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Peters",
+      "opponent": "James",
+      "matches": 4,
+      "pts": 2.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Peters",
+      "opponent": "Lowy",
+      "matches": 3,
+      "pts": 2.0,
+      "win_pct": 0.667
+    },
+    {
+      "player": "Peters",
+      "opponent": "McLachlan",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Peters",
+      "opponent": "S. Barker",
+      "matches": 4,
+      "pts": 4.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "Rogers",
+      "opponent": "Condon",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Rogers",
+      "opponent": "J. Witt",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Rogers",
+      "opponent": "James",
+      "matches": 1,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Rogers",
+      "opponent": "Lowy",
+      "matches": 2,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Rogers",
+      "opponent": "McLachlan",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "Cranham",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "D. Witt",
+      "matches": 2,
+      "pts": 1.5,
+      "win_pct": 0.5
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "J. Barker",
+      "matches": 1,
+      "pts": 1.0,
+      "win_pct": 1.0
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "Mulligan",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "O'Rourke",
+      "matches": 2,
+      "pts": 1.0,
+      "win_pct": 0.5
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "Peters",
+      "matches": 4,
+      "pts": 0.0,
+      "win_pct": 0.0
+    },
+    {
+      "player": "S. Barker",
+      "opponent": "Watters",
+      "matches": 4,
+      "pts": 1.0,
+      "win_pct": 0.25
+    },
+    {
+      "player": "Watters",
+      "opponent": "Condon",
+      "matches": 5,
+      "pts": 3.0,
+      "win_pct": 0.6
+    },
+    {
+      "player": "Watters",
+      "opponent": "J. Witt",
+      "matches": 3,
+      "pts": 1.5,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Watters",
+      "opponent": "James",
+      "matches": 1,
+      "pts": 0.5,
+      "win_pct": 0.0
+    },
+    {
+      "player": "Watters",
+      "opponent": "Lowy",
+      "matches": 3,
+      "pts": 1.0,
+      "win_pct": 0.333
+    },
+    {
+      "player": "Watters",
+      "opponent": "McLachlan",
+      "matches": 2,
+      "pts": 1.5,
+      "win_pct": 0.5
+    },
+    {
+      "player": "Watters",
+      "opponent": "S. Barker",
+      "matches": 4,
+      "pts": 3.0,
+      "win_pct": 0.75
+    }
+  ],
+  "holiday_mvp": [
+    {
+      "holiday_id": 1,
+      "players": [
+        "McLachlan"
+      ],
+      "pts": 3.833,
+      "country": "Portugal",
+      "area": "Amendoeira"
+    },
+    {
+      "holiday_id": 2,
+      "players": [
+        "Cranham",
+        "O'Rourke"
+      ],
+      "pts": 2.5,
+      "country": "Spain",
+      "area": "Murcia"
+    },
+    {
+      "holiday_id": 3,
+      "players": [
+        "Lowy"
+      ],
+      "pts": 3.0,
+      "country": "Spain",
+      "area": "Malaga"
+    },
+    {
+      "holiday_id": 4,
+      "players": [
+        "James"
+      ],
+      "pts": 3.0,
+      "country": "Turkey",
+      "area": "Belek"
+    }
+  ],
+  "rivalry_by_day": [
+    {
+      "date": "2022-05-26",
+      "holiday_id": 1,
+      "europe_pts": 3.5,
+      "usa_pts": 2.5
+    },
+    {
+      "date": "2022-05-27",
+      "holiday_id": 1,
+      "europe_pts": 2.0,
+      "usa_pts": 2.0
+    },
+    {
+      "date": "2022-05-28",
+      "holiday_id": 1,
+      "europe_pts": 3.5,
+      "usa_pts": 3.5
+    },
+    {
+      "date": "2022-05-29",
+      "holiday_id": 1,
+      "europe_pts": 3.0,
+      "usa_pts": 3.0
+    },
+    {
+      "date": "2023-05-25",
+      "holiday_id": 2,
+      "europe_pts": 2.0,
+      "usa_pts": 1.0
+    },
+    {
+      "date": "2023-05-26",
+      "holiday_id": 2,
+      "europe_pts": 1.5,
+      "usa_pts": 1.5
+    },
+    {
+      "date": "2023-05-27",
+      "holiday_id": 2,
+      "europe_pts": 2.5,
+      "usa_pts": 3.5
+    },
+    {
+      "date": "2024-09-12",
+      "holiday_id": 3,
+      "europe_pts": 1.0,
+      "usa_pts": 2.0
+    },
+    {
+      "date": "2024-09-13",
+      "holiday_id": 3,
+      "europe_pts": 2.0,
+      "usa_pts": 1.0
+    },
+    {
+      "date": "2024-09-15",
+      "holiday_id": 3,
+      "europe_pts": 0.5,
+      "usa_pts": 5.5
+    },
+    {
+      "date": "2025-05-14",
+      "holiday_id": 4,
+      "europe_pts": 1.0,
+      "usa_pts": 2.0
+    },
+    {
+      "date": "2025-05-15",
+      "holiday_id": 4,
+      "europe_pts": 2.0,
+      "usa_pts": 1.0
+    },
+    {
+      "date": "2025-05-16",
+      "holiday_id": 4,
+      "europe_pts": 2.5,
+      "usa_pts": 3.5
+    }
+  ],
+  "rivalry_by_format": [
+    {
+      "format": "Texas Scramble",
+      "europe_pts": 6.5,
+      "usa_pts": 5.5
+    },
+    {
+      "format": "Fourball",
+      "europe_pts": 6.5,
+      "usa_pts": 4.5
+    },
+    {
+      "format": "2x2 Scramble",
+      "europe_pts": 4.0,
+      "usa_pts": 5.0
+    },
+    {
+      "format": "Singles",
+      "europe_pts": 10.0,
+      "usa_pts": 16.0
+    },
+    {
+      "format": "Kingpin",
+      "europe_pts": 0.0,
+      "usa_pts": 1.0
+    }
+  ]
+}
