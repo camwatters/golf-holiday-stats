@@ -144,8 +144,9 @@ const NAV_SECTIONS = [
 function FloatingNav() {
   const [active, setActive]     = useState(null)
   const [expanded, setExpanded] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(false)
   const w = useWindowWidth()
-  if (w < 768) return null
+  const isMobile = w < 768
 
   useEffect(() => {
     const observers = NAV_SECTIONS.map(s => {
@@ -163,7 +164,72 @@ function FloatingNav() {
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    setDrawerOpen(false)
   }
+
+  if (isMobile) return (
+    <>
+      <button
+        onClick={() => setDrawerOpen(o => !o)}
+        style={{
+          position: 'fixed', top: 16, right: 16, zIndex: 200,
+          width: 40, height: 40, borderRadius: '50%',
+          background: G.green, border: 'none', cursor: 'pointer',
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 5,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+        }}
+      >
+        {[0,1,2].map(i => (
+          <span key={i} style={{
+            display: 'block', width: 18, height: 2, background: '#fff', borderRadius: 2,
+            transition: 'all 0.2s',
+            transform: drawerOpen
+              ? i === 0 ? 'translateY(7px) rotate(45deg)'
+              : i === 2 ? 'translateY(-7px) rotate(-45deg)'
+              : 'scaleX(0)'
+              : 'none',
+          }} />
+        ))}
+      </button>
+
+      {drawerOpen && (
+        <div
+          onClick={() => setDrawerOpen(false)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 150,
+            background: 'rgba(0,0,0,0.4)', backdropFilter: 'blur(2px)',
+          }}
+        />
+      )}
+
+      <div style={{
+        position: 'fixed', top: 0, right: 0, bottom: 0, zIndex: 160,
+        width: 220, background: G.card, boxShadow: '-4px 0 20px rgba(0,0,0,0.15)',
+        transform: drawerOpen ? 'translateX(0)' : 'translateX(100%)',
+        transition: 'transform 0.25s ease',
+        display: 'flex', flexDirection: 'column', paddingTop: 72, paddingBottom: 24,
+        overflowY: 'auto',
+      }}>
+        <div style={{ fontSize: 10, fontWeight: 700, color: G.muted, textTransform: 'uppercase', letterSpacing: 1, padding: '0 20px 12px' }}>Navigate</div>
+        {NAV_SECTIONS.map(s => {
+          const isActive = active === s.id
+          return (
+            <div
+              key={s.id}
+              onClick={() => scrollTo(s.id)}
+              style={{
+                padding: '11px 20px', cursor: 'pointer', fontSize: 14, fontWeight: isActive ? 700 : 400,
+                color: isActive ? G.green : G.text,
+                background: isActive ? G.greenLight : 'transparent',
+                borderLeft: `3px solid ${isActive ? G.green : 'transparent'}`,
+                transition: 'all 0.15s',
+              }}
+            >{s.label}</div>
+          )
+        })}
+      </div>
+    </>
+  )
 
   return (
     <div
