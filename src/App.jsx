@@ -295,26 +295,16 @@ function Hero({ data }) {
         </div>
 
         {/* right: stats */}
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'flex-start' }}>
-          {[
-            { value: data.holidays.length, label: 'Holidays' },
-            { value: data.leaderboard.length, label: 'Players' },
-            { value: totalMatches, label: 'Matches' },
-          ].map(s => (
-            <div key={s.label} style={{
-              background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)',
-              borderRadius: 14, padding: '18px 22px', textAlign: 'center', minWidth: 80,
-            }}>
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#fff', lineHeight: 1, fontFamily: "'Playfair Display', serif" }}>{s.value}</div>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', textTransform: 'uppercase', letterSpacing: 0.8, marginTop: 4 }}>{s.label}</div>
-            </div>
-          ))}
+        <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: 12, flexWrap: 'wrap', alignItems: 'flex-start' }}>
+          {/* Series pill — first on mobile */}
           <div style={{
             background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)',
             borderRadius: 14, padding: '18px 24px', textAlign: 'center',
+            order: isMobile ? -1 : 1,
+            alignSelf: isMobile ? 'stretch' : 'auto',
           }}>
             <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>Series</div>
-            <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: 12, alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: 30, fontWeight: 800, color: '#93c5fd', fontFamily: "'Playfair Display', serif" }}>{euWins}</div>
                 <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>Europe</div>
@@ -325,6 +315,22 @@ function Hero({ data }) {
                 <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', marginTop: 2 }}>USA</div>
               </div>
             </div>
+          </div>
+          {/* Stat pills */}
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', order: isMobile ? 1 : 0 }}>
+            {[
+              { value: data.holidays.length, label: 'Holidays' },
+              { value: data.leaderboard.length, label: 'Players' },
+              { value: totalMatches, label: 'Matches' },
+            ].map(s => (
+              <div key={s.label} style={{
+                background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)',
+                borderRadius: 14, padding: '18px 22px', textAlign: 'center', minWidth: 80, flex: 1,
+              }}>
+                <div style={{ fontSize: 36, fontWeight: 800, color: '#fff', lineHeight: 1, fontFamily: "'Playfair Display', serif" }}>{s.value}</div>
+                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', textTransform: 'uppercase', letterSpacing: 0.8, marginTop: 4 }}>{s.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -1561,11 +1567,11 @@ function HolidayMVP({ holidayMvp, leaderboard }) {
 
 // ── Player Scatter ─────────────────────────────────────────────────────────
 const ScatterDot = (props) => {
-  const { cx, cy, payload, showLabel } = props
+  const { cx, cy, payload, showLabel, r: dotR = 9 } = props
   const color = payload?.team === 'Europe' ? G.blue : G.red
   return (
     <g>
-      <circle cx={cx} cy={cy} r={9} fill={color} stroke="#fff" strokeWidth={2} opacity={0.88} />
+      <circle cx={cx} cy={cy} r={dotR} fill={color} stroke="#fff" strokeWidth={2} opacity={0.88} />
       {showLabel !== false && (
         <text
           x={cx} y={cy - 15} textAnchor="middle"
@@ -1652,7 +1658,7 @@ function PlayerScatter({ playerMatches, leaderboard }) {
               )
             }}
           />
-          <Scatter data={data} shape={<ScatterDot showLabel={!isMobile} />} />
+          <Scatter data={data} shape={<ScatterDot showLabel={!isMobile} r={isMobile ? 5 : 9} />} />
         </ScatterChart>
       </ResponsiveContainer>
       </div>
