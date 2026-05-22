@@ -38,6 +38,16 @@ const shadowHover = '0 2px 6px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.1)'
 const fmt1 = (n) => (typeof n === 'number' ? n.toFixed(2) : n)
 const fmt3 = (n) => (typeof n === 'number' ? n.toFixed(3) : n)
 
+function useWindowWidth() {
+  const [width, setWidth] = useState(() => window.innerWidth)
+  useEffect(() => {
+    const handler = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handler)
+    return () => window.removeEventListener('resize', handler)
+  }, [])
+  return width
+}
+
 // ── Custom tooltip ─────────────────────────────────────────────────────────
 function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
@@ -126,8 +136,10 @@ const NAV_SECTIONS = [
 ]
 
 function FloatingNav() {
-  const [active, setActive]   = useState(null)
+  const [active, setActive]     = useState(null)
   const [expanded, setExpanded] = useState(false)
+  const w = useWindowWidth()
+  if (w < 768) return null
 
   useEffect(() => {
     const observers = NAV_SECTIONS.map(s => {
@@ -231,6 +243,8 @@ function RankBadge({ rank }) {
 // ── Hero ───────────────────────────────────────────────────────────────────
 function Hero({ data }) {
   const [hoveredHoliday, setHoveredHoliday] = useState(null)
+  const w = useWindowWidth()
+  const isMobile = w < 640
   const totalMatches = [...new Set(data.player_matches.map(r => `${r.holiday_id}-${r.match_id}`))].length
   const usaWins = data.rivalry.filter(r => r.winner === 'USA').length
   const euWins  = data.rivalry.filter(r => r.winner === 'Europe' || r.winner === 'Tie').length
@@ -252,7 +266,7 @@ function Hero({ data }) {
     <div style={{
       background: `linear-gradient(135deg, ${G.green} 0%, #0f2b1e 100%)`,
       borderRadius: 20,
-      padding: '48px 48px 44px',
+      padding: isMobile ? '28px 20px 24px' : '48px 48px 44px',
       marginBottom: 8,
       position: 'relative',
       overflow: 'hidden',
@@ -264,7 +278,7 @@ function Hero({ data }) {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 32 }}>
+      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: isMobile ? 16 : 32 }}>
         {/* left: title */}
         <div>
           <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.55)', fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 10 }}>
@@ -272,7 +286,7 @@ function Hero({ data }) {
           </div>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 56, fontWeight: 800, color: '#ffffff',
+            fontSize: isMobile ? 36 : 56, fontWeight: 800, color: '#ffffff',
             lineHeight: 1.05, marginBottom: 12,
           }}>
             Ride Her Cup<br />
@@ -623,6 +637,7 @@ function Leaderboard({ data, playerMatches }) {
 
 // ── Rivalry ────────────────────────────────────────────────────────────────
 function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
+  const isMobile = useWindowWidth() < 640
   const fmtLabel = (dateStr) => {
     const d = new Date(dateStr)
     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
@@ -647,7 +662,7 @@ function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
 
   return (
     <>
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>
       <Card id="rivalry-per-day">
         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Points per Day</div>
         <div style={{ fontSize: 13, color: G.muted, marginBottom: 20 }}>Match points awarded each matchday</div>
@@ -729,6 +744,7 @@ function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
 function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
   const [selected, setSelected] = useState(leaderboard[0]?.player)
   const [hoveredTile, setHoveredTile] = useState(null)
+  const isMobile = useWindowWidth() < 640
   const player = leaderboard.find(p => p.player === selected)
   const rank   = leaderboard.findIndex(p => p.player === selected) + 1
 
@@ -844,7 +860,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
       </div>
 
       {player && (
-        <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 32 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '280px 1fr', gap: isMobile ? 20 : 32 }}>
           {/* left panel */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
@@ -900,7 +916,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
             )}
 
             {/* relationship tiles */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 10, marginTop: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(5, 1fr)', gap: 10, marginTop: 20 }}>
               {[
                 {
                   label: 'Partner',
@@ -1004,6 +1020,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
 
 // ── Birdies ────────────────────────────────────────────────────────────────
 function BirdiesChart({ leaderboard, birdieByHoliday, holidays }) {
+  const isMobile = useWindowWidth() < 640
   const totalData = [...leaderboard]
     .filter(p => p.birdies > 0)
     .sort((a, b) => b.birdies - a.birdies)
@@ -1021,7 +1038,7 @@ function BirdiesChart({ leaderboard, birdieByHoliday, holidays }) {
   const activePlayers = leaderboard.filter(p => p.birdies > 0)
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>
       <Card id="birdies-total">
         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Total Birdies</div>
         <div style={{ fontSize: 13, color: G.muted, marginBottom: 20 }}>Across all rounds</div>
@@ -1061,6 +1078,8 @@ function BirdiesChart({ leaderboard, birdieByHoliday, holidays }) {
 // ── Award Leaderboards ─────────────────────────────────────────────────────
 function AwardLeaderboards({ leaderboard, awards }) {
   const [hoveredDotd, setHoveredDotd] = useState(null)
+  const w = useWindowWidth()
+  const cols = w < 640 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3, 1fr)'
 
   // Build map of player -> all DOTD incidents
   const dotdIncidents = {}
@@ -1090,7 +1109,7 @@ function AwardLeaderboards({ leaderboard, awards }) {
   ]
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: cols, gap: 20 }}>
       {lists.map(({ key, label, sub, color, bg, border }) => {
         const sorted = [...leaderboard]
           .filter(p => p[key] > 0)
@@ -1300,6 +1319,7 @@ function GreenJackets({ greenJackets, holidays }) {
 // ── Partnership Stats ──────────────────────────────────────────────────────
 function PartnershipStats({ playerMatches, leaderboard }) {
   const [expanded, setExpanded] = useState(false)
+  const isMobile = useWindowWidth() < 640
   const [sortBy, setSortBy]     = useState('pts')
 
   const teamOf = {}
@@ -1407,7 +1427,7 @@ function PartnershipStats({ playerMatches, leaderboard }) {
         )}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>
         {[
           { label: 'Europe Partnerships', pairs: europe, color: G.blue, id: 'partnerships-europe' },
           { label: 'USA Partnerships',    pairs: usa,    color: G.red,  id: 'partnerships-usa'    },
@@ -1638,8 +1658,9 @@ function PlayerScatter({ playerMatches, leaderboard }) {
 
 // ── Awards ─────────────────────────────────────────────────────────────────
 function Awards({ awards }) {
+  const isMobile = useWindowWidth() < 640
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(4, 1fr)', gap: 20 }}>
       {awards.map(h => (
         <Card key={h.holiday_id} id={`awards-${h.holiday_id}`}>
           <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 2 }}>{h.country} <span style={{ color: G.muted, fontWeight: 400 }}>·</span> {h.area}</div>
@@ -1745,6 +1766,7 @@ function FormDot({ match, isHovered, onEnter, onLeave }) {
 // ── App ────────────────────────────────────────────────────────────────────
 export default function App() {
   const [data, setData] = useState(null)
+  const isMobile = useWindowWidth() < 640
 
   useEffect(() => {
     fetch('/data/golf.json').then(r => r.json()).then(setData)
@@ -1757,7 +1779,7 @@ export default function App() {
   )
 
   return (
-    <div style={{ maxWidth: 1280, margin: '0 auto', padding: '40px 28px 80px' }}>
+    <div style={{ maxWidth: 1280, margin: '0 auto', padding: isMobile ? '20px 16px 60px' : '40px 28px 80px' }}>
       <FloatingNav />
       <Hero data={data} />
 
@@ -1771,7 +1793,7 @@ export default function App() {
       <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} pairStats={data.pair_stats} vsStats={data.vs_stats} />
 
       <SectionTitle id="sec-profile">Player Profile & Green Towel</SectionTitle>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>
         <PlayerScatter playerMatches={data.player_matches} leaderboard={data.leaderboard} />
         <GreenJackets greenJackets={data.green_jackets} holidays={data.holidays} />
       </div>
