@@ -1765,7 +1765,7 @@ function FormDot({ match, isHovered, onEnter, onLeave, teamOf = {} }) {
             <div style={{ marginTop: 3 }}>
               <span style={{ color: G.muted }}>With: </span>
               {match.partners.map((p, i) => (
-                <span key={p} style={{ color: teamOf[p] === 'Europe' ? G.blue : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
+                <span key={p} style={{ color: teamOf[p] === 'Europe' ? '#3b82f6' : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
                   {p}{i < match.partners.length - 1 ? ', ' : ''}
                 </span>
               ))}
@@ -1775,7 +1775,7 @@ function FormDot({ match, isHovered, onEnter, onLeave, teamOf = {} }) {
             <div style={{ marginTop: 2 }}>
               <span style={{ color: G.muted }}>vs: </span>
               {match.opponents.map((p, i) => (
-                <span key={p} style={{ color: teamOf[p] === 'Europe' ? G.blue : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
+                <span key={p} style={{ color: teamOf[p] === 'Europe' ? '#3b82f6' : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
                   {p}{i < match.opponents.length - 1 ? ', ' : ''}
                 </span>
               ))}
