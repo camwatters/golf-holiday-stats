@@ -334,6 +334,7 @@ function Hero({ data }) {
         marginTop: 36, paddingTop: 28,
         borderTop: '1px solid rgba(255,255,255,0.12)',
         display: 'flex', gap: 12, flexWrap: 'wrap',
+        justifyContent: isMobile ? 'center' : 'flex-start',
       }}>
         {data.rivalry.map(r => {
           const info = infoByHoliday[r.holiday_id] || { courses: [], eurCaptain: '', usaCaptain: '' }
@@ -1560,21 +1561,24 @@ function HolidayMVP({ holidayMvp, leaderboard }) {
 
 // ── Player Scatter ─────────────────────────────────────────────────────────
 const ScatterDot = (props) => {
-  const { cx, cy, payload } = props
+  const { cx, cy, payload, showLabel } = props
   const color = payload?.team === 'Europe' ? G.blue : G.red
   return (
     <g>
       <circle cx={cx} cy={cy} r={9} fill={color} stroke="#fff" strokeWidth={2} opacity={0.88} />
-      <text
-        x={cx} y={cy - 15} textAnchor="middle"
-        fontSize={11} fontWeight={600} fill={G.text}
-        fontFamily="Inter, sans-serif" style={{ pointerEvents: 'none' }}
-      >{payload?.player}</text>
+      {showLabel !== false && (
+        <text
+          x={cx} y={cy - 15} textAnchor="middle"
+          fontSize={11} fontWeight={600} fill={G.text}
+          fontFamily="Inter, sans-serif" style={{ pointerEvents: 'none' }}
+        >{payload?.player}</text>
+      )}
     </g>
   )
 }
 
 function PlayerScatter({ playerMatches, leaderboard }) {
+  const isMobile = useWindowWidth() < 640
   const SINGLES_FMTS = new Set(['Singles'])
   const TEAM_FMTS    = new Set(['Fourball', '2x2 Scramble'])
   const scoreOf = r => r === 'Win' ? 1 : r === 'Loss' ? -1 : 0
@@ -1610,7 +1614,7 @@ function PlayerScatter({ playerMatches, leaderboard }) {
       <div style={{ fontSize: 13, color: G.muted, marginBottom: 20 }}>Win&nbsp;= +1 · Draw&nbsp;= 0 · Loss&nbsp;= −1 &nbsp;·&nbsp; Team = Fourball + Pairs formats</div>
       <div style={{ maxWidth: 560, margin: '0 auto' }}>
       <ResponsiveContainer width="100%" aspect={1}>
-        <ScatterChart margin={{ top: 36, right: 40, bottom: 48, left: 50 }}>
+        <ScatterChart margin={{ top: isMobile ? 10 : 36, right: 40, bottom: 48, left: isMobile ? 30 : 50 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={G.border} />
           <XAxis
             type="number" dataKey="x" name="Singles Points" domain={[minX, maxX]} ticks={axisTicks}
@@ -1648,7 +1652,7 @@ function PlayerScatter({ playerMatches, leaderboard }) {
               )
             }}
           />
-          <Scatter data={data} shape={<ScatterDot />} />
+          <Scatter data={data} shape={<ScatterDot showLabel={!isMobile} />} />
         </ScatterChart>
       </ResponsiveContainer>
       </div>
