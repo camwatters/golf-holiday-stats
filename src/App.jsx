@@ -471,6 +471,9 @@ function Leaderboard({ data, playerMatches }) {
   const [expanded, setExpanded]     = useState(null)
   const [hoveredDot, setHoveredDot] = useState(null)
 
+  const teamOf = {}
+  data.forEach(p => { teamOf[p.player] = p.team })
+
   const cols = [...LB_BASE, ...(pairsOpen ? LB_PAIRS_EXPANDED : LB_PAIRS_COMBINED), ...LB_TAIL]
 
   const sorted = [...data].sort((a, b) => {
@@ -623,6 +626,7 @@ function Leaderboard({ data, playerMatches }) {
                                   isHovered={hoveredDot === dotKey}
                                   onEnter={() => setHoveredDot(dotKey)}
                                   onLeave={() => setHoveredDot(null)}
+                                  teamOf={teamOf}
                                 />
                               )
                             })}
@@ -1718,7 +1722,7 @@ const SCRAMBLE_COLOR = {
   pos4: { bg: G.redLight, border: '#fca5a5', color: G.red,   label: '4th' },
 }
 
-function FormDot({ match, isHovered, onEnter, onLeave }) {
+function FormDot({ match, isHovered, onEnter, onLeave, teamOf = {} }) {
   const isScramble = match.format === 'Texas Scramble'
   let bg, border, color, label
 
@@ -1758,13 +1762,23 @@ function FormDot({ match, isHovered, onEnter, onLeave }) {
           </div>
           <div style={{ color: G.muted, marginBottom: 2 }}>{match.course} · {match.date?.slice(0, 10)}</div>
           {match.partners?.length > 0 && (
-            <div style={{ color: G.blue, marginTop: 3 }}>
-              <span style={{ color: G.muted }}>With: </span>{match.partners.join(', ')}
+            <div style={{ marginTop: 3 }}>
+              <span style={{ color: G.muted }}>With: </span>
+              {match.partners.map((p, i) => (
+                <span key={p} style={{ color: teamOf[p] === 'Europe' ? G.blue : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
+                  {p}{i < match.partners.length - 1 ? ', ' : ''}
+                </span>
+              ))}
             </div>
           )}
           {match.opponents?.length > 0 && (
-            <div style={{ color: G.red, marginTop: 2 }}>
-              <span style={{ color: G.muted }}>vs: </span>{match.opponents.join(', ')}
+            <div style={{ marginTop: 2 }}>
+              <span style={{ color: G.muted }}>vs: </span>
+              {match.opponents.map((p, i) => (
+                <span key={p} style={{ color: teamOf[p] === 'Europe' ? G.blue : teamOf[p] === 'USA' ? G.red : G.text, fontWeight: 600 }}>
+                  {p}{i < match.opponents.length - 1 ? ', ' : ''}
+                </span>
+              ))}
             </div>
           )}
         </div>
