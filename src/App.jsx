@@ -101,13 +101,100 @@ function Card({ children, style, id, noPad }) {
   )
 }
 
-function SectionTitle({ children }) {
+function SectionTitle({ children, id }) {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 14, margin: '48px 0 20px' }}>
+    <div id={id} style={{ display: 'flex', alignItems: 'center', gap: 14, margin: '48px 0 20px' }}>
       <div style={{ width: 4, height: 28, background: G.gold, borderRadius: 2, flexShrink: 0 }} />
       <h2 style={{ fontSize: 22, fontWeight: 700, color: G.text, fontFamily: "'Playfair Display', serif" }}>
         {children}
       </h2>
+    </div>
+  )
+}
+
+// ── Floating Nav ───────────────────────────────────────────────────────────
+const NAV_SECTIONS = [
+  { id: 'sec-leaderboard',   label: 'Leaderboard' },
+  { id: 'sec-rivalry',       label: 'Rivalry' },
+  { id: 'sec-spotlight',     label: 'Player Spotlight' },
+  { id: 'sec-profile',       label: 'Player Profile' },
+  { id: 'sec-partnerships',  label: 'Best Partnerships' },
+  { id: 'sec-wins',          label: 'Biggest Wins' },
+  { id: 'sec-birdies',       label: 'Birdies' },
+  { id: 'sec-awards',        label: 'Award Leaderboards' },
+  { id: 'sec-dotd',          label: 'Holiday Awards' },
+]
+
+function FloatingNav() {
+  const [active, setActive]   = useState(null)
+  const [expanded, setExpanded] = useState(false)
+
+  useEffect(() => {
+    const observers = NAV_SECTIONS.map(s => {
+      const el = document.getElementById(s.id)
+      if (!el) return null
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActive(s.id) },
+        { rootMargin: '-10% 0px -80% 0px' }
+      )
+      obs.observe(el)
+      return obs
+    }).filter(Boolean)
+    return () => observers.forEach(o => o.disconnect())
+  }, [])
+
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  return (
+    <div
+      onMouseEnter={() => setExpanded(true)}
+      onMouseLeave={() => setExpanded(false)}
+      style={{
+        position: 'fixed', left: 16, top: '50%', transform: 'translateY(-50%)',
+        zIndex: 100, display: 'flex', flexDirection: 'column', gap: 6,
+        alignItems: 'flex-start',
+      }}
+    >
+      {NAV_SECTIONS.map(s => {
+        const isActive = active === s.id
+        return (
+          <div
+            key={s.id}
+            onClick={() => scrollTo(s.id)}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 8,
+              cursor: 'pointer', padding: '3px 0',
+            }}
+          >
+            <div style={{
+              width: isActive ? 10 : 6,
+              height: isActive ? 10 : 6,
+              borderRadius: '50%',
+              background: isActive ? G.gold : 'rgba(0,0,0,0.2)',
+              flexShrink: 0,
+              transition: 'all 0.2s',
+              marginLeft: isActive ? 0 : 2,
+            }} />
+            <div style={{
+              fontSize: 12, fontWeight: isActive ? 700 : 500,
+              color: isActive ? G.text : G.muted,
+              whiteSpace: 'nowrap',
+              maxWidth: expanded ? 140 : 0,
+              overflow: 'hidden',
+              opacity: expanded ? 1 : 0,
+              transition: 'max-width 0.25s ease, opacity 0.2s ease',
+              background: expanded ? 'rgba(255,255,255,0.92)' : 'transparent',
+              padding: expanded ? '2px 8px' : '2px 0',
+              borderRadius: 99,
+              boxShadow: expanded ? '0 1px 4px rgba(0,0,0,0.08)' : 'none',
+            }}>
+              {s.label}
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -1671,36 +1758,37 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: 1280, margin: '0 auto', padding: '40px 28px 80px' }}>
+      <FloatingNav />
       <Hero data={data} />
 
-      <SectionTitle>Overall Leaderboard</SectionTitle>
+      <SectionTitle id="sec-leaderboard">Overall Leaderboard</SectionTitle>
       <Leaderboard data={data.leaderboard} playerMatches={data.player_matches} />
 
-      <SectionTitle>Europe vs USA Rivalry</SectionTitle>
+      <SectionTitle id="sec-rivalry">Europe vs USA Rivalry</SectionTitle>
       <RivalryChart rivalry={data.rivalry} rivalryByDay={data.rivalry_by_day} rivalryByFormat={data.rivalry_by_format} holidays={data.holidays} />
 
-      <SectionTitle>Player Spotlight</SectionTitle>
+      <SectionTitle id="sec-spotlight">Player Spotlight</SectionTitle>
       <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} pairStats={data.pair_stats} vsStats={data.vs_stats} />
 
-      <SectionTitle>Player Profile & Green Towels</SectionTitle>
+      <SectionTitle id="sec-profile">Player Profile & Green Towel</SectionTitle>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
         <PlayerScatter playerMatches={data.player_matches} leaderboard={data.leaderboard} />
         <GreenJackets greenJackets={data.green_jackets} holidays={data.holidays} />
       </div>
 
-      <SectionTitle>Best Partnerships</SectionTitle>
+      <SectionTitle id="sec-partnerships">Best Partnerships</SectionTitle>
       <PartnershipStats playerMatches={data.player_matches} leaderboard={data.leaderboard} />
 
-      <SectionTitle>Biggest Wins</SectionTitle>
+      <SectionTitle id="sec-wins">Biggest Wins</SectionTitle>
       <BiggestWins playerMatches={data.player_matches} holidays={data.holidays} />
 
-      <SectionTitle>Birdies</SectionTitle>
+      <SectionTitle id="sec-birdies">Birdies</SectionTitle>
       <BirdiesChart leaderboard={data.leaderboard} birdieByHoliday={data.birdie_by_holiday} holidays={data.holidays} />
 
-      <SectionTitle>Award Leaderboards</SectionTitle>
+      <SectionTitle id="sec-awards">Award Leaderboards</SectionTitle>
       <AwardLeaderboards leaderboard={data.leaderboard} awards={data.awards} />
 
-      <SectionTitle>Holiday Awards & Dick of the Day</SectionTitle>
+      <SectionTitle id="sec-dotd">Holiday Awards & Dick of the Day</SectionTitle>
       <Awards awards={data.awards} />
 
       <div style={{
