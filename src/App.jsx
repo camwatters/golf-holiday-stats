@@ -1767,14 +1767,94 @@ function FormDot({ match, isHovered, onEnter, onLeave }) {
   )
 }
 
+// ── Password Gate ──────────────────────────────────────────────────────────
+function PasswordGate({ onUnlock }) {
+  const [value, setValue]   = useState('')
+  const [error, setError]   = useState(false)
+  const [shake, setShake]   = useState(false)
+
+  const attempt = () => {
+    const correct = import.meta.env.VITE_APP_PASSWORD
+    if (!correct || value === correct) {
+      sessionStorage.setItem('rhc_unlocked', '1')
+      onUnlock()
+    } else {
+      setError(true)
+      setShake(true)
+      setValue('')
+      setTimeout(() => setShake(false), 500)
+    }
+  }
+
+  return (
+    <div style={{
+      minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
+      background: `linear-gradient(135deg, ${G.green} 0%, #0f2b1e 100%)`,
+      padding: 24,
+    }}>
+      <div style={{
+        background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)',
+        borderRadius: 20, padding: '48px 40px', width: '100%', maxWidth: 360,
+        textAlign: 'center',
+        transform: shake ? 'translateX(0)' : undefined,
+        animation: shake ? 'shake 0.4s ease' : undefined,
+      }}>
+        <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>
+          The Annual Golf Holiday
+        </div>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.1 }}>
+          Ride Her Cup
+        </div>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 600, color: G.gold, marginBottom: 36 }}>
+          Statistics
+        </div>
+        <input
+          type="password"
+          placeholder="Enter password"
+          value={value}
+          onChange={e => { setValue(e.target.value); setError(false) }}
+          onKeyDown={e => e.key === 'Enter' && attempt()}
+          autoFocus
+          style={{
+            width: '100%', boxSizing: 'border-box',
+            padding: '12px 16px', borderRadius: 10, fontSize: 15,
+            background: 'rgba(255,255,255,0.1)',
+            border: `1.5px solid ${error ? '#fca5a5' : 'rgba(255,255,255,0.2)'}`,
+            color: '#fff', outline: 'none', marginBottom: 12,
+          }}
+        />
+        {error && (
+          <div style={{ fontSize: 13, color: '#fca5a5', marginBottom: 12 }}>Incorrect password</div>
+        )}
+        <button
+          onClick={attempt}
+          style={{
+            width: '100%', padding: '12px', borderRadius: 10, fontSize: 15,
+            fontWeight: 700, cursor: 'pointer', border: 'none',
+            background: G.gold, color: G.green, transition: 'opacity 0.15s',
+          }}
+          onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
+          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+        >
+          Enter
+        </button>
+      </div>
+      <style>{`@keyframes shake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-8px)} 40%{transform:translateX(8px)} 60%{transform:translateX(-6px)} 80%{transform:translateX(6px)} }`}</style>
+    </div>
+  )
+}
+
 // ── App ────────────────────────────────────────────────────────────────────
 export default function App() {
-  const [data, setData] = useState(null)
+  const [data, setData]         = useState(null)
+  const [unlocked, setUnlocked] = useState(() => !!sessionStorage.getItem('rhc_unlocked'))
   const isMobile = useWindowWidth() < 640
 
   useEffect(() => {
     fetch('/data/golf.json').then(r => r.json()).then(setData)
   }, [])
+
+  if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />
 
   if (!data) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', color: G.muted, fontSize: 16 }}>
