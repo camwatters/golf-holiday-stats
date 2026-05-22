@@ -73,7 +73,13 @@ function Card({ children, style, id, noPad }) {
   const ref = useRef()
   const exportImg = useCallback(async () => {
     const { default: html2canvas } = await import('html2canvas')
+    const hidden = [...ref.current.querySelectorAll('[data-no-export]')]
+    hidden.forEach(el => { el.dataset.prevDisplay = el.style.display; el.style.display = 'none' })
+    const prevRadius = ref.current.style.borderRadius
+    ref.current.style.borderRadius = '0'
     const canvas = await html2canvas(ref.current, { scale: 2, backgroundColor: G.card, useCORS: true })
+    ref.current.style.borderRadius = prevRadius
+    hidden.forEach(el => { el.style.display = el.dataset.prevDisplay || ''; delete el.dataset.prevDisplay })
     const a = document.createElement('a')
     a.href = canvas.toDataURL('image/png')
     a.download = (id || 'card') + '.png'
@@ -439,37 +445,40 @@ function Hero({ data }) {
 
 // ── Leaderboard ────────────────────────────────────────────────────────────
 const LB_BASE = [
-  { key: 'rank',            label: '#',          align: 'center', width: 44 },
-  { key: 'player',          label: 'Player',     align: 'left',   width: 120 },
-  { key: 'apps',            label: 'Apps',       align: 'center', width: 52 },
-  { key: 'total_pts',       label: 'Total',      align: 'center', width: 68, fmt: fmt1 },
-  { key: 'ppg',             label: 'PPG',        align: 'center', width: 64, fmt: fmt3 },
-  { key: 'scramble_record', label: 'Scram Rec',  align: 'center', width: 90, title: 'Texas Scramble — 1st/2nd/3rd/4th' },
+  { key: 'rank',            label: '#',          align: 'center', width: '3%' },
+  { key: 'player',          label: 'Player',     align: 'left',   width: '13%' },
+  { key: 'apps',            label: 'Apps',       align: 'center', width: '4%' },
+  { key: 'total_pts',       label: 'Total',      align: 'center', width: '5%', fmt: fmt1 },
+  { key: 'ppg',             label: 'PPG',        align: 'center', width: '5%', fmt: fmt3 },
 ]
 const LB_PAIRS_COMBINED = [
-  { key: 'pairs_record',    label: 'Pairs Rec',  align: 'center', width: 110, title: 'Fourball + 2x2 Scramble combined W/L (ties)' },
+  { key: 'pairs_record',    label: 'Pairs Rec',  align: 'center', width: '11%', title: 'Fourball + 2x2 Scramble combined W/L (ties)' },
 ]
 const LB_PAIRS_EXPANDED = [
-  { key: 'fourball_record', label: 'FB Rec',     align: 'center', width: 100, title: 'Fourball W/L (ties)' },
-  { key: 'twoxtwo_record',  label: '2x2 Rec',    align: 'center', width: 100, title: '2x2 Scramble W/L (ties)' },
+  { key: 'fourball_record', label: 'FB Rec',     align: 'center', width: '11%', title: 'Fourball W/L (ties)' },
+  { key: 'twoxtwo_record',  label: '2x2 Rec',    align: 'center', width: '11%', title: '2x2 Scramble W/L (ties)' },
 ]
 const LB_TAIL = [
-  { key: 'singles_record',  label: 'Singles Rec',align: 'center', width: 110, title: 'Singles W/L (ties)' },
-  { key: 'kingpin_record',  label: 'KP Rec',     align: 'center', width: 90,  title: 'Kingpin W/L (ties)' },
-  { key: 'birdies',         label: 'Birdies',    align: 'center', width: 68 },
-  { key: 'chip_ins',        label: 'Chip-ins',   align: 'center', width: 72 },
-  { key: 'long_drive',      label: 'LD',         align: 'center', width: 44, title: 'Long Drive wins' },
-  { key: 'near_pin',        label: 'NP',         align: 'center', width: 44, title: 'Nearest Pin wins' },
-  { key: 'dotd',            label: 'DOTD',       align: 'center', width: 56, title: 'Dick Of The Day' },
+  { key: 'singles_record',  label: 'Singles Rec',align: 'center', width: '11%', title: 'Singles W/L (ties)' },
+  { key: 'kingpin_record',  label: 'Kingpin Rec', align: 'center', width: '10%', title: 'Kingpin W/L (ties)' },
+  { key: 'scramble_record', label: 'Tex S Rec',  align: 'center', width: '10%', title: 'Texas Scramble — 1st/2nd/3rd/4th' },
+  { key: 'birdies',         label: 'Birdies',    align: 'center', width: '3%',  title: 'Birdies' },
+  { key: 'chip_ins',        label: 'Chip Ins',   align: 'center', width: '3%',  title: 'Chip-ins' },
+  { key: 'long_drive',      label: 'Long Drive', align: 'center', width: '3%',  title: 'Long Drive wins' },
+  { key: 'near_pin',        label: 'Near Pin',   align: 'center', width: '3%',  title: 'Nearest Pin wins' },
+  { key: 'dotd',            label: 'DOTD',       align: 'center', width: '3%',  title: 'Dick Of The Day' },
 ]
 
-function Leaderboard({ data, playerMatches }) {
+function Leaderboard({ data, playerMatches, players }) {
   const [sortKey, setSortKey]       = useState('rank')
   const [sortAsc, setSortAsc]       = useState(true)
   const [hovered, setHovered]       = useState(null)
   const [pairsOpen, setPairsOpen]   = useState(false)
   const [expanded, setExpanded]     = useState(null)
   const [hoveredDot, setHoveredDot] = useState(null)
+  const [filter2026, setFilter2026] = useState('all')
+
+  const attending2026 = new Set((players || []).filter(p => p.attending).map(p => p.name))
 
   const teamOf = {}
   data.forEach(p => { teamOf[p.player] = p.team })
@@ -494,10 +503,46 @@ function Leaderboard({ data, playerMatches }) {
   return (
     <Card id="leaderboard" noPad>
       <div style={{ overflowX: 'auto' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, tableLayout: 'fixed' }}>
+          <colgroup>
+            <col style={{ width: '3%' }} />
+            <col style={{ width: '14%' }} />
+            <col style={{ width: '5%' }} />
+            <col style={{ width: '7%' }} />
+            <col style={{ width: '6%' }} />
+            {pairsOpen ? <><col style={{ width: '7%' }} /><col style={{ width: '7%' }} /></> : <col style={{ width: '9%' }} />}
+            <col style={{ width: '9%' }} />
+            <col style={{ width: '8.5%' }} />
+            <col style={{ width: '8.5%' }} />
+            <col style={{ width: '6%' }} />
+            <col style={{ width: '6%' }} />
+            <col style={{ width: '6%' }} />
+            <col style={{ width: '6%' }} />
+            <col style={{ width: '6%' }} />
+          </colgroup>
           <thead>
             <tr style={{ background: G.green, color: '#fff' }}>
-              <th colSpan={LB_BASE.length} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 11, fontWeight: 600, letterSpacing: 0.5 }} />
+              <th colSpan={LB_BASE.length} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 11, fontWeight: 600, letterSpacing: 0.5 }}>
+                <div data-no-export style={{ display: 'flex', gap: 6 }}>
+                  {['all', 'highlight', 'focus'].map(mode => (
+                    <button
+                      key={mode}
+                      onClick={e => { e.stopPropagation(); setFilter2026(mode) }}
+                      style={{
+                        flex: 1, padding: '6px 14px', borderRadius: 99, fontSize: 12, fontWeight: 600,
+                        cursor: 'pointer',
+                        border: `1.5px solid ${filter2026 === mode ? '#fff' : 'rgba(255,255,255,0.4)'}`,
+                        background: filter2026 === mode ? 'rgba(255,255,255,0.2)' : 'transparent',
+                        color: '#fff',
+                        transition: 'all 0.15s',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {mode === 'all' ? 'All Players' : mode === 'highlight' ? '2026 Players' : '2026 Focus'}
+                    </button>
+                  ))}
+                </div>
+              </th>
               <th
                 colSpan={pairsCols}
                 style={{ padding: '8px 12px', textAlign: 'center', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, borderLeft: '1px solid rgba(255,255,255,0.2)', cursor: 'pointer', userSelect: 'none' }}
@@ -506,8 +551,8 @@ function Leaderboard({ data, playerMatches }) {
               >
                 Pairs {pairsOpen ? '▾' : '▸'}
               </th>
-              <th colSpan={2} style={{ padding: '8px 12px', textAlign: 'center', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, borderLeft: '1px solid rgba(255,255,255,0.2)' }}>Head-to-Head</th>
-              <th colSpan={LB_TAIL.length - 2} style={{ padding: '8px 12px', textAlign: 'center', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, borderLeft: '1px solid rgba(255,255,255,0.2)' }}>Awards</th>
+              <th colSpan={3} style={{ padding: '8px 12px', textAlign: 'center', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, borderLeft: '1px solid rgba(255,255,255,0.2)' }}>Game Records</th>
+              <th colSpan={LB_TAIL.length - 3} style={{ padding: '8px 12px', textAlign: 'center', fontSize: 11, fontWeight: 600, letterSpacing: 0.5, borderLeft: '1px solid rgba(255,255,255,0.2)' }}>Awards</th>
             </tr>
             <tr style={{ background: G.faint, borderBottom: `2px solid ${G.border}` }}>
               {cols.map((col, ci) => {
@@ -548,6 +593,12 @@ function Leaderboard({ data, playerMatches }) {
                 groups[groups.length - 1].matches.push(m)
               })
 
+              const isAttending = attending2026.has(row.player)
+              const isNew2026 = !!row.new_2026
+              if (isNew2026 && filter2026 !== 'focus') return null
+              if (filter2026 === 'focus' && !isAttending && !isNew2026) return null
+              const isDimmed = filter2026 === 'highlight' && !isAttending
+
               return (
                 <>
                 <tr
@@ -556,19 +607,21 @@ function Leaderboard({ data, playerMatches }) {
                   onMouseEnter={() => setHovered(i)}
                   onMouseLeave={() => setHovered(null)}
                   style={{
-                    background: isExpanded
-                      ? (row.team === 'Europe' ? '#dbeafe' : row.team === 'USA' ? '#fee2e2' : G.greenLight)
-                      : hovered === i
-                        ? (row.team === 'Europe' ? '#e8f0fb' : row.team === 'USA' ? '#fbeaea' : '#f0faf4')
-                        : row.team === 'Europe' ? '#f4f7fd' : row.team === 'USA' ? '#fdf4f4' : G.card,
+                    background: isNew2026 ? G.faint
+                      : isExpanded
+                        ? (row.team === 'Europe' ? '#dbeafe' : row.team === 'USA' ? '#fee2e2' : G.greenLight)
+                        : hovered === i
+                          ? (row.team === 'Europe' ? '#e8f0fb' : row.team === 'USA' ? '#fbeaea' : '#f0faf4')
+                          : row.team === 'Europe' ? '#f4f7fd' : row.team === 'USA' ? '#fdf4f4' : G.card,
                     borderBottom: isExpanded ? 'none' : `1px solid ${G.border}`,
-                    transition: 'background 0.12s',
-                    cursor: 'pointer',
+                    transition: 'background 0.12s, opacity 0.2s',
+                    cursor: isNew2026 ? 'default' : 'pointer',
+                    opacity: isDimmed ? 0.25 : 1,
                   }}
                 >
                   {cols.map((col, ci) => {
                     const v = row[col.key]
-                    const display = col.fmt ? col.fmt(v) : (v ?? '—')
+                    const display = isNew2026 && col.key !== 'player' && col.key !== 'rank' ? '—' : col.fmt ? col.fmt(v) : (v ?? '—')
                     const isPairsBoundary = ci === LB_BASE.length
                     const cellStyle = {
                       padding: '7px 12px', textAlign: col.align, color: G.muted,
@@ -577,14 +630,15 @@ function Leaderboard({ data, playerMatches }) {
 
                     if (col.key === 'rank') return (
                       <td key="rank" style={{ ...cellStyle, textAlign: 'center' }}>
-                        <RankBadge rank={row.rank} />
+                        {isNew2026 ? <span style={{ fontSize: 11, color: G.muted }}>—</span> : <RankBadge rank={row.rank} />}
                       </td>
                     )
                     if (col.key === 'player') return (
-                      <td key="player" style={{ ...cellStyle, fontWeight: 700, fontSize: 14, color: G.text }}>
+                      <td key="player" style={{ ...cellStyle, fontWeight: 700, fontSize: 14, color: isNew2026 ? G.muted : G.text, whiteSpace: 'nowrap' }}>
                         {row.player}
-                        {isTop3 && <span style={{ marginLeft: 6, fontSize: 11, color: G.gold }}>★</span>}
-                        <span style={{ marginLeft: 8, fontSize: 10, color: G.muted }}>{isExpanded ? '▴' : '▾'}</span>
+                        {!isNew2026 && isTop3 && <span style={{ marginLeft: 6, fontSize: 11, color: G.gold }}>★</span>}
+                        {!isNew2026 && <span style={{ marginLeft: 8, fontSize: 10, color: G.muted }}>{isExpanded ? '▴' : '▾'}</span>}
+                        {isNew2026 && <span style={{ marginLeft: 8, fontSize: 10, color: G.muted, fontStyle: 'italic' }}>2026</span>}
                       </td>
                     )
                     if (col.key === 'total_pts') return (
@@ -752,12 +806,15 @@ function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
 }
 
 // ── Player Spotlight ───────────────────────────────────────────────────────
-function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
+function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats, players }) {
   const [selected, setSelected] = useState(leaderboard[0]?.player)
   const [hoveredTile, setHoveredTile] = useState(null)
+  const tileLeaveTimer = useRef(null)
   const isMobile = useWindowWidth() < 640
   const player = leaderboard.find(p => p.player === selected)
   const rank   = leaderboard.findIndex(p => p.player === selected) + 1
+  const playerInfo = (players || []).find(p => p.name === selected)
+  const fullName = playerInfo ? `${playerInfo.first_name} ${playerInfo.last_name}` : selected
 
   const myVs    = vsStats.filter(r => r.player === selected)
 
@@ -855,7 +912,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
     <Card id={`player-${selected}`}>
       {/* player selector */}
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 28, paddingBottom: 20, borderBottom: `1px solid ${G.border}` }}>
-        {leaderboard.map(p => (
+        {leaderboard.filter(p => !p.new_2026).map(p => (
           <button
             key={p.player}
             onClick={() => setSelected(p.player)}
@@ -877,7 +934,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
               <RankBadge rank={rank} />
               <div>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{player.player}</div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{fullName}</div>
                 <div style={{ fontSize: 12, color: G.muted, marginTop: 2 }}>Rank #{rank} · {player.apps} holidays</div>
               </div>
             </div>
@@ -951,7 +1008,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
                   label: 'Friend',
                   name: friend?.partner,
                   sub: friend ? `${friend.pts.toFixed(1)} pts together` : null,
-                  matchList: (friend?.matchList || []).filter(m => m.result === 'Win'),
+                  matchList: friend?.matchList || [],
                   color: G.greenMid,
                   bg: G.greenLight,
                   border: '#b7e4c7',
@@ -960,7 +1017,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
                   label: 'Enemy',
                   name: enemy?.name,
                   sub: enemy ? `${enemy.losses} loss${enemy.losses !== 1 ? 'es' : ''}` : null,
-                  matchList: (enemy?.matchList || []).filter(m => m.result === 'Loss'),
+                  matchList: enemy?.matchList || [],
                   color: G.red,
                   bg: G.redLight,
                   border: '#fca5a5',
@@ -969,7 +1026,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
                   label: 'Victim',
                   name: victim?.name,
                   sub: victim ? `${victim.wins} win${victim.wins !== 1 ? 's' : ''}` : null,
-                  matchList: (victim?.matchList || []).filter(m => m.result === 'Win'),
+                  matchList: victim?.matchList || [],
                   color: G.green,
                   bg: '#f0faf4',
                   border: '#b7e4c7',
@@ -977,8 +1034,8 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
               ].map(t => (
                 <div
                   key={t.label}
-                  onMouseEnter={() => t.matchList.length > 0 && setHoveredTile(t.label)}
-                  onMouseLeave={() => setHoveredTile(null)}
+                  onMouseEnter={() => { clearTimeout(tileLeaveTimer.current); t.matchList.length > 0 && setHoveredTile(t.label) }}
+                  onMouseLeave={() => { tileLeaveTimer.current = setTimeout(() => setHoveredTile(null), 200) }}
                   style={{
                     background: t.bg, border: `1px solid ${t.border}`,
                     borderRadius: 12, padding: '12px 14px',
@@ -991,13 +1048,21 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
                   <div style={{ fontWeight: 700, fontSize: 14, color: G.text }}>{t.name ?? '—'}</div>
                   <div style={{ fontSize: 11, color: G.muted, marginTop: 2 }}>{t.sub ?? ''}</div>
                   {hoveredTile === t.label && t.matchList.length > 0 && (
+                    <div
+                      onMouseEnter={() => clearTimeout(tileLeaveTimer.current)}
+                      onMouseLeave={() => { tileLeaveTimer.current = setTimeout(() => setHoveredTile(null), 200) }}
+                      style={{
+                      position: 'absolute', bottom: '100%', left: 0,
+                      paddingBottom: 6,
+                      background: 'transparent',
+                      zIndex: 20,
+                      pointerEvents: 'auto',
+                    }}>
                     <div style={{
-                      position: 'absolute', bottom: 'calc(100% + 6px)', left: 0,
                       background: G.card, border: `1px solid ${G.border}`,
                       borderRadius: 10, padding: '10px 12px',
                       minWidth: 210, maxHeight: 220, overflowY: 'auto',
-                      boxShadow: shadowHover, zIndex: 20,
-                      pointerEvents: 'none',
+                      boxShadow: shadowHover,
                     }}>
                       {t.matchList.map((mx, i) => (
                         <div key={i} style={{
@@ -1017,6 +1082,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats }) {
                           </span>
                         </div>
                       ))}
+                    </div>
                     </div>
                   )}
                 </div>
@@ -1888,13 +1954,13 @@ export default function App() {
       <Hero data={data} />
 
       <SectionTitle id="sec-leaderboard">Overall Leaderboard</SectionTitle>
-      <Leaderboard data={data.leaderboard} playerMatches={data.player_matches} />
+      <Leaderboard data={data.leaderboard} playerMatches={data.player_matches} players={data.players} />
 
       <SectionTitle id="sec-rivalry">Europe vs USA Rivalry</SectionTitle>
       <RivalryChart rivalry={data.rivalry} rivalryByDay={data.rivalry_by_day} rivalryByFormat={data.rivalry_by_format} holidays={data.holidays} />
 
       <SectionTitle id="sec-spotlight">Player Spotlight</SectionTitle>
-      <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} pairStats={data.pair_stats} vsStats={data.vs_stats} />
+      <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} pairStats={data.pair_stats} vsStats={data.vs_stats} players={data.players} />
 
       <SectionTitle id="sec-profile">Player Profile & Green Towel</SectionTitle>
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>

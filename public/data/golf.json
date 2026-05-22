@@ -50,16 +50,16 @@
       "holiday_id": 1,
       "country": "Portugal",
       "area": "Amendoeira",
-      "europe_pts": 12.0,
-      "usa_pts": 11.0,
+      "europe_pts": 12,
+      "usa_pts": 11,
       "winner": "Europe"
     },
     {
       "holiday_id": 2,
       "country": "Spain",
       "area": "Murcia",
-      "europe_pts": 6.0,
-      "usa_pts": 6.0,
+      "europe_pts": 6,
+      "usa_pts": 6,
       "winner": "Tie"
     },
     {
@@ -84,22 +84,22 @@
       "player": "J. Witt",
       "team": "USA",
       "apps": 4,
-      "total_pts": 8.0,
+      "total_pts": 8,
       "total_matches": 13,
       "ppg": 0.615,
-      "scramble_pts": 1.0,
+      "scramble_pts": 1,
       "scramble_n": 2,
       "scramble_record": "1/0/0/1",
       "fourball_pts": 2.5,
       "fourball_n": 3,
       "fourball_record": "2/0 (1 ties)",
-      "twoxtwo_pts": 1.0,
+      "twoxtwo_pts": 1,
       "twoxtwo_n": 3,
       "twoxtwo_record": "1/2 (0 ties)",
       "singles_pts": 2.5,
       "singles_n": 4,
       "singles_record": "2/1 (1 ties)",
-      "kingpin_pts": 1.0,
+      "kingpin_pts": 1,
       "kingpin_n": 1,
       "kingpin_record": "1/0 (0 ties)",
       "pairs_record": "3/2 (1 ties)",
@@ -118,22 +118,22 @@
       "player": "Lowy",
       "team": "USA",
       "apps": 4,
-      "total_pts": 8.0,
+      "total_pts": 8,
       "total_matches": 13,
       "ppg": 0.615,
-      "scramble_pts": 0.0,
+      "scramble_pts": 0,
       "scramble_n": 2,
       "scramble_record": "0/0/0/2",
-      "fourball_pts": 1.0,
+      "fourball_pts": 1,
       "fourball_n": 3,
       "fourball_record": "1/2 (0 ties)",
-      "twoxtwo_pts": 3.0,
+      "twoxtwo_pts": 3,
       "twoxtwo_n": 3,
       "twoxtwo_record": "3/0 (0 ties)",
-      "singles_pts": 4.0,
+      "singles_pts": 4,
       "singles_n": 5,
       "singles_record": "4/1 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "4/2 (0 ties)",
@@ -161,13 +161,13 @@
       "fourball_pts": 3.5,
       "fourball_n": 4,
       "fourball_record": "3/0 (1 ties)",
-      "twoxtwo_pts": 0.0,
+      "twoxtwo_pts": 0,
       "twoxtwo_n": 3,
       "twoxtwo_record": "0/3 (0 ties)",
       "singles_pts": 3.5,
       "singles_n": 4,
       "singles_record": "3/0 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "3/3 (1 ties)",
@@ -192,16 +192,16 @@
       "scramble_pts": 0.833,
       "scramble_n": 2,
       "scramble_record": "1/0/0/1",
-      "fourball_pts": 3.0,
+      "fourball_pts": 3,
       "fourball_n": 4,
       "fourball_record": "3/1 (0 ties)",
-      "twoxtwo_pts": 1.0,
+      "twoxtwo_pts": 1,
       "twoxtwo_n": 3,
       "twoxtwo_record": "1/2 (0 ties)",
       "singles_pts": 2.5,
       "singles_n": 4,
       "singles_record": "2/1 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "4/3 (0 ties)",
@@ -229,13 +229,13 @@
       "fourball_pts": 1.5,
       "fourball_n": 3,
       "fourball_record": "1/1 (1 ties)",
-      "twoxtwo_pts": 2.0,
+      "twoxtwo_pts": 2,
       "twoxtwo_n": 3,
       "twoxtwo_record": "2/1 (0 ties)",
       "singles_pts": 2.5,
       "singles_n": 5,
       "singles_record": "2/2 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "3/2 (1 ties)",
@@ -251,7 +251,7 @@
       "rank": 4
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "team": "Europe",
       "apps": 4,
       "total_pts": 6.625,
@@ -260,16 +260,16 @@
       "scramble_pts": 0.625,
       "scramble_n": 2,
       "scramble_record": "0/1/1/0",
-      "fourball_pts": 3.0,
+      "fourball_pts": 3,
       "fourball_n": 3,
       "fourball_record": "3/0 (0 ties)",
-      "twoxtwo_pts": 2.0,
+      "twoxtwo_pts": 2,
       "twoxtwo_n": 3,
       "twoxtwo_record": "2/1 (0 ties)",
-      "singles_pts": 1.0,
+      "singles_pts": 1,
       "singles_n": 4,
       "singles_record": "1/3 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 1,
       "kingpin_record": "0/1 (0 ties)",
       "pairs_record": "5/1 (0 ties)",
@@ -294,16 +294,16 @@
       "scramble_pts": 1.833,
       "scramble_n": 2,
       "scramble_record": "2/0/0/0",
-      "fourball_pts": 1.0,
+      "fourball_pts": 1,
       "fourball_n": 4,
       "fourball_record": "1/3 (0 ties)",
-      "twoxtwo_pts": 2.0,
+      "twoxtwo_pts": 2,
       "twoxtwo_n": 3,
       "twoxtwo_record": "2/1 (0 ties)",
       "singles_pts": 1.5,
       "singles_n": 4,
       "singles_record": "1/2 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "3/4 (0 ties)",
@@ -328,16 +328,16 @@
       "scramble_pts": 0.625,
       "scramble_n": 2,
       "scramble_record": "0/1/1/0",
-      "fourball_pts": 2.0,
+      "fourball_pts": 2,
       "fourball_n": 4,
       "fourball_record": "2/2 (0 ties)",
-      "twoxtwo_pts": 2.0,
+      "twoxtwo_pts": 2,
       "twoxtwo_n": 3,
       "twoxtwo_record": "2/1 (0 ties)",
       "singles_pts": 1.5,
       "singles_n": 4,
       "singles_record": "1/2 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "4/3 (0 ties)",
@@ -365,13 +365,13 @@
       "fourball_pts": 1.5,
       "fourball_n": 3,
       "fourball_record": "1/1 (1 ties)",
-      "twoxtwo_pts": 0.0,
+      "twoxtwo_pts": 0,
       "twoxtwo_n": 2,
       "twoxtwo_record": "0/2 (0 ties)",
-      "singles_pts": 2.0,
+      "singles_pts": 2,
       "singles_n": 4,
       "singles_record": "2/2 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "1/3 (1 ties)",
@@ -396,16 +396,16 @@
       "scramble_pts": 1.333,
       "scramble_n": 2,
       "scramble_record": "1/1/0/0",
-      "fourball_pts": 2.0,
+      "fourball_pts": 2,
       "fourball_n": 4,
       "fourball_record": "2/2 (0 ties)",
-      "twoxtwo_pts": 0.0,
+      "twoxtwo_pts": 0,
       "twoxtwo_n": 3,
       "twoxtwo_record": "0/3 (0 ties)",
       "singles_pts": 1.5,
       "singles_n": 4,
       "singles_record": "1/2 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "2/5 (0 ties)",
@@ -427,19 +427,19 @@
       "total_pts": 4.5,
       "total_matches": 13,
       "ppg": 0.346,
-      "scramble_pts": 0.0,
+      "scramble_pts": 0,
       "scramble_n": 2,
       "scramble_record": "0/0/0/2",
-      "fourball_pts": 0.0,
+      "fourball_pts": 0,
       "fourball_n": 4,
       "fourball_record": "0/4 (0 ties)",
-      "twoxtwo_pts": 2.0,
+      "twoxtwo_pts": 2,
       "twoxtwo_n": 3,
       "twoxtwo_record": "2/1 (0 ties)",
       "singles_pts": 2.5,
       "singles_n": 4,
       "singles_record": "2/1 (1 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "2/5 (0 ties)",
@@ -464,16 +464,16 @@
       "scramble_pts": 1.333,
       "scramble_n": 2,
       "scramble_record": "1/1/0/0",
-      "fourball_pts": 1.0,
+      "fourball_pts": 1,
       "fourball_n": 2,
       "fourball_record": "1/1 (0 ties)",
-      "twoxtwo_pts": 1.0,
+      "twoxtwo_pts": 1,
       "twoxtwo_n": 1,
       "twoxtwo_record": "1/0 (0 ties)",
-      "singles_pts": 0.0,
+      "singles_pts": 0,
       "singles_n": 2,
       "singles_record": "0/2 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "2/1 (0 ties)",
@@ -492,22 +492,22 @@
       "player": "Brown",
       "team": "USA",
       "apps": 1,
-      "total_pts": 2.0,
+      "total_pts": 2,
       "total_matches": 3,
       "ppg": 0.667,
-      "scramble_pts": 0.0,
+      "scramble_pts": 0,
       "scramble_n": 0,
       "scramble_record": "0/0/0/0",
-      "fourball_pts": 0.0,
+      "fourball_pts": 0,
       "fourball_n": 1,
       "fourball_record": "0/1 (0 ties)",
-      "twoxtwo_pts": 1.0,
+      "twoxtwo_pts": 1,
       "twoxtwo_n": 1,
       "twoxtwo_record": "1/0 (0 ties)",
-      "singles_pts": 1.0,
+      "singles_pts": 1,
       "singles_n": 1,
       "singles_record": "1/0 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "1/1 (0 ties)",
@@ -532,16 +532,16 @@
       "scramble_pts": 0.625,
       "scramble_n": 2,
       "scramble_record": "0/1/1/0",
-      "fourball_pts": 0.0,
+      "fourball_pts": 0,
       "fourball_n": 1,
       "fourball_record": "0/1 (0 ties)",
-      "twoxtwo_pts": 1.0,
+      "twoxtwo_pts": 1,
       "twoxtwo_n": 1,
       "twoxtwo_record": "1/0 (0 ties)",
-      "singles_pts": 0.0,
+      "singles_pts": 0,
       "singles_n": 2,
       "singles_record": "0/2 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 1,
       "kingpin_record": "0/1 (0 ties)",
       "pairs_record": "1/1 (0 ties)",
@@ -560,22 +560,22 @@
       "player": "J. Barker",
       "team": "Europe",
       "apps": 1,
-      "total_pts": 0.0,
+      "total_pts": 0,
       "total_matches": 3,
-      "ppg": 0.0,
-      "scramble_pts": 0.0,
+      "ppg": 0,
+      "scramble_pts": 0,
       "scramble_n": 0,
       "scramble_record": "0/0/0/0",
-      "fourball_pts": 0.0,
+      "fourball_pts": 0,
       "fourball_n": 1,
       "fourball_record": "0/1 (0 ties)",
-      "twoxtwo_pts": 0.0,
+      "twoxtwo_pts": 0,
       "twoxtwo_n": 1,
       "twoxtwo_record": "0/1 (0 ties)",
-      "singles_pts": 0.0,
+      "singles_pts": 0,
       "singles_n": 1,
       "singles_record": "0/1 (0 ties)",
-      "kingpin_pts": 0.0,
+      "kingpin_pts": 0,
       "kingpin_n": 0,
       "kingpin_record": "0/0 (0 ties)",
       "pairs_record": "0/2 (0 ties)",
@@ -589,6 +589,78 @@
       "win_streak": 0,
       "holiday_wins": 0,
       "rank": 15
+    },
+    {
+      "player": "Skeet",
+      "team": null,
+      "apps": 0,
+      "total_pts": 0,
+      "ppg": 0,
+      "birdies": 0,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 0,
+      "birdies_faced": 0,
+      "chip_ins_faced": 0,
+      "win_streak": 0,
+      "holiday_wins": 0,
+      "pairs_record": "0-0-0",
+      "scramble_record": "0-0-0",
+      "singles_record": "0-0-0",
+      "fourball_record": "0-0-0",
+      "twoxtwo_record": "0-0-0",
+      "kingpin_record": "0-0-0",
+      "rank": 999,
+      "new_2026": true
+    },
+    {
+      "player": "K. Peters",
+      "team": null,
+      "apps": 0,
+      "total_pts": 0,
+      "ppg": 0,
+      "birdies": 0,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 0,
+      "birdies_faced": 0,
+      "chip_ins_faced": 0,
+      "win_streak": 0,
+      "holiday_wins": 0,
+      "pairs_record": "0-0-0",
+      "scramble_record": "0-0-0",
+      "singles_record": "0-0-0",
+      "fourball_record": "0-0-0",
+      "twoxtwo_record": "0-0-0",
+      "kingpin_record": "0-0-0",
+      "rank": 999,
+      "new_2026": true
+    },
+    {
+      "player": "Champion",
+      "team": null,
+      "apps": 0,
+      "total_pts": 0,
+      "ppg": 0,
+      "birdies": 0,
+      "chip_ins": 0,
+      "long_drive": 0,
+      "near_pin": 0,
+      "dotd": 0,
+      "birdies_faced": 0,
+      "chip_ins_faced": 0,
+      "win_streak": 0,
+      "holiday_wins": 0,
+      "pairs_record": "0-0-0",
+      "scramble_record": "0-0-0",
+      "singles_record": "0-0-0",
+      "fourball_record": "0-0-0",
+      "twoxtwo_record": "0-0-0",
+      "kingpin_record": "0-0-0",
+      "rank": 999,
+      "new_2026": true
     }
   ],
   "player_matches": [
@@ -741,14 +813,14 @@
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters",
+        "C. Peters",
         "Rogers",
         "Cranham"
       ],
       "opponents": []
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 1,
       "holiday_id": 1,
       "match_id": 1,
@@ -788,7 +860,7 @@
       "chip_ins": 0,
       "partners": [
         "Watters",
-        "Peters",
+        "C. Peters",
         "Cranham"
       ],
       "opponents": []
@@ -811,7 +883,7 @@
       "chip_ins": 0,
       "partners": [
         "Watters",
-        "Peters",
+        "C. Peters",
         "Rogers"
       ],
       "opponents": []
@@ -827,7 +899,7 @@
       "course": "Faldo",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -849,7 +921,7 @@
       "course": "Faldo",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -871,7 +943,7 @@
       "course": "Faldo",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -893,7 +965,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
@@ -917,7 +989,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
@@ -941,7 +1013,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -965,7 +1037,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -989,7 +1061,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -1013,7 +1085,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 1,
@@ -1037,7 +1109,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -1061,7 +1133,7 @@
       "course": "O'Connor",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -1085,7 +1157,7 @@
       "course": "O'Connor",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5&3",
       "birdies": 0,
@@ -1106,7 +1178,7 @@
       "course": "O'Connor",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5&3",
       "birdies": 0,
@@ -1117,7 +1189,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 4,
       "holiday_id": 1,
       "match_id": 5,
@@ -1127,7 +1199,7 @@
       "course": "O'Connor",
       "format": "Kingpin",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5.5-7",
       "birdies": 0,
@@ -1150,13 +1222,13 @@
       "course": "O'Connor",
       "format": "Kingpin",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5.5-7",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "J. Witt"
@@ -1173,14 +1245,14 @@
       "course": "O'Connor",
       "format": "Kingpin",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5.5-7",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Rogers"
       ]
     },
@@ -1195,7 +1267,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "7&5",
       "birdies": 0,
@@ -1216,7 +1288,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "7&5",
       "birdies": 0,
@@ -1227,7 +1299,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 5,
       "holiday_id": 1,
       "match_id": 7,
@@ -1237,7 +1309,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 0,
@@ -1258,14 +1330,14 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [],
       "opponents": [
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -1279,7 +1351,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2UP",
       "birdies": 0,
@@ -1300,7 +1372,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2UP",
       "birdies": 0,
@@ -1321,7 +1393,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -1342,7 +1414,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
@@ -1363,7 +1435,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 1,
@@ -1384,7 +1456,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 0,
@@ -1405,7 +1477,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -1426,7 +1498,7 @@
       "course": "Faldo",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
@@ -1489,7 +1561,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "pos1",
       "score": "",
       "birdies": 0,
@@ -1511,7 +1583,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "pos1",
       "score": "",
       "birdies": 0,
@@ -1533,7 +1605,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "pos1",
       "score": "",
       "birdies": 0,
@@ -1627,14 +1699,14 @@
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters",
+        "C. Peters",
         "Rogers",
         "Cranham"
       ],
       "opponents": []
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 6,
       "holiday_id": 1,
       "match_id": 13,
@@ -1674,7 +1746,7 @@
       "chip_ins": 0,
       "partners": [
         "Watters",
-        "Peters",
+        "C. Peters",
         "Cranham"
       ],
       "opponents": []
@@ -1697,7 +1769,7 @@
       "chip_ins": 0,
       "partners": [
         "Watters",
-        "Peters",
+        "C. Peters",
         "Rogers"
       ],
       "opponents": []
@@ -1713,7 +1785,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -1735,7 +1807,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -1757,7 +1829,7 @@
       "course": "O'Connor",
       "format": "Texas Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "pos4",
       "score": "",
       "birdies": 0,
@@ -1769,7 +1841,7 @@
       "opponents": []
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 7,
       "holiday_id": 2,
       "match_id": 14,
@@ -1779,7 +1851,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "6&4",
       "birdies": 0,
@@ -1803,13 +1875,13 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "6&4",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "James",
@@ -1827,7 +1899,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "6&4",
       "birdies": 0,
@@ -1836,7 +1908,7 @@
         "S. Barker"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Cranham"
       ]
     },
@@ -1851,7 +1923,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "6&4",
       "birdies": 0,
@@ -1860,7 +1932,7 @@
         "James"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Cranham"
       ]
     },
@@ -1875,7 +1947,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -1899,7 +1971,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -1923,7 +1995,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -1947,7 +2019,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -1971,7 +2043,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -1995,7 +2067,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -2019,7 +2091,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -2043,7 +2115,7 @@
       "course": "Hacienda del Almo",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -2153,7 +2225,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 8,
       "holiday_id": 2,
       "match_id": 18,
@@ -2163,7 +2235,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5&4",
       "birdies": 0,
@@ -2187,13 +2259,13 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5&4",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "S. Barker",
@@ -2211,7 +2283,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5&4",
       "birdies": 0,
@@ -2220,7 +2292,7 @@
         "Lowy"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Cranham"
       ]
     },
@@ -2235,7 +2307,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5&4",
       "birdies": 0,
@@ -2244,7 +2316,7 @@
         "S. Barker"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Cranham"
       ]
     },
@@ -2259,7 +2331,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -2283,7 +2355,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -2307,7 +2379,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -2331,7 +2403,7 @@
       "course": "Hacienda del Almo",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -2355,7 +2427,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2376,7 +2448,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 1,
@@ -2387,7 +2459,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 9,
       "holiday_id": 2,
       "match_id": 21,
@@ -2397,7 +2469,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -2418,14 +2490,14 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [],
       "opponents": [
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -2439,7 +2511,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&2",
       "birdies": 1,
@@ -2460,7 +2532,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&2",
       "birdies": 0,
@@ -2523,7 +2595,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2544,7 +2616,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -2565,7 +2637,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2UP",
       "birdies": 0,
@@ -2586,7 +2658,7 @@
       "course": "Saurines",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2UP",
       "birdies": 0,
@@ -2607,13 +2679,13 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "James",
@@ -2621,7 +2693,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 12,
       "holiday_id": 3,
       "match_id": 26,
@@ -2631,7 +2703,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -2655,7 +2727,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2665,7 +2737,7 @@
       ],
       "opponents": [
         "Cranham",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -2679,7 +2751,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2689,7 +2761,7 @@
       ],
       "opponents": [
         "Cranham",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -2703,7 +2775,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2727,7 +2799,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -2751,7 +2823,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -2775,7 +2847,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -2799,7 +2871,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&1",
       "birdies": 0,
@@ -2823,7 +2895,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&1",
       "birdies": 0,
@@ -2847,7 +2919,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&1",
       "birdies": 0,
@@ -2871,7 +2943,7 @@
       "course": "Calanova",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&1",
       "birdies": 0,
@@ -2895,7 +2967,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&2",
       "birdies": 3,
@@ -2919,7 +2991,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&2",
       "birdies": 0,
@@ -2943,7 +3015,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&2",
       "birdies": 0,
@@ -2967,7 +3039,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&2",
       "birdies": 0,
@@ -2991,7 +3063,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "7&5",
       "birdies": 1,
@@ -3015,7 +3087,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "7&5",
       "birdies": 0,
@@ -3039,7 +3111,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "7&5",
       "birdies": 1,
@@ -3063,7 +3135,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "7&5",
       "birdies": 0,
@@ -3077,7 +3149,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 13,
       "holiday_id": 3,
       "match_id": 31,
@@ -3087,7 +3159,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -3111,13 +3183,13 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "Condon",
@@ -3135,7 +3207,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -3144,7 +3216,7 @@
         "S. Barker"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Watters"
       ]
     },
@@ -3159,7 +3231,7 @@
       "course": "El Chaparral",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -3168,7 +3240,7 @@
         "Condon"
       ],
       "opponents": [
-        "Peters",
+        "C. Peters",
         "Watters"
       ]
     },
@@ -3183,7 +3255,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -3204,7 +3276,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -3257,7 +3329,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 14,
       "holiday_id": 3,
       "match_id": 34,
@@ -3267,7 +3339,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 0,
@@ -3288,14 +3360,14 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 1,
       "chip_ins": 0,
       "partners": [],
       "opponents": [
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -3309,7 +3381,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -3330,7 +3402,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -3351,7 +3423,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 2,
@@ -3372,7 +3444,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 3,
@@ -3393,7 +3465,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 1,
@@ -3414,7 +3486,7 @@
       "course": "La Cala (Asia)",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 0,
@@ -3435,13 +3507,13 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2UP",
       "birdies": 0,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "James",
@@ -3449,7 +3521,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 15,
       "holiday_id": 4,
       "match_id": 38,
@@ -3459,7 +3531,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2UP",
       "birdies": 0,
@@ -3483,7 +3555,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2UP",
       "birdies": 0,
@@ -3493,7 +3565,7 @@
       ],
       "opponents": [
         "D. Witt",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -3507,7 +3579,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2UP",
       "birdies": 0,
@@ -3517,7 +3589,7 @@
       ],
       "opponents": [
         "D. Witt",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -3531,7 +3603,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5&4",
       "birdies": 0,
@@ -3555,7 +3627,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "5&4",
       "birdies": 0,
@@ -3579,7 +3651,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5&4",
       "birdies": 0,
@@ -3603,7 +3675,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "5&4",
       "birdies": 0,
@@ -3627,7 +3699,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 0,
@@ -3651,7 +3723,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 0,
@@ -3675,7 +3747,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 0,
@@ -3699,7 +3771,7 @@
       "course": "Kaya Belek",
       "format": "2x2 Scramble",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 0,
@@ -3723,13 +3795,13 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 1,
       "chip_ins": 0,
       "partners": [
-        "Peters"
+        "C. Peters"
       ],
       "opponents": [
         "Lowy",
@@ -3737,7 +3809,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 16,
       "holiday_id": 4,
       "match_id": 41,
@@ -3747,7 +3819,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&2",
       "birdies": 2,
@@ -3771,7 +3843,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -3781,7 +3853,7 @@
       ],
       "opponents": [
         "Watters",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -3795,7 +3867,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&2",
       "birdies": 0,
@@ -3805,7 +3877,7 @@
       ],
       "opponents": [
         "Watters",
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -3819,7 +3891,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "7&5",
       "birdies": 0,
@@ -3843,7 +3915,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "7&5",
       "birdies": 1,
@@ -3867,7 +3939,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "7&5",
       "birdies": 0,
@@ -3891,7 +3963,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "7&5",
       "birdies": 0,
@@ -3915,7 +3987,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 1,
@@ -3939,7 +4011,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 0,
@@ -3963,7 +4035,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
@@ -3987,7 +4059,7 @@
       "course": "Carya",
       "format": "Fourball",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 1,
@@ -4011,7 +4083,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "2&1",
       "birdies": 1,
@@ -4032,7 +4104,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "2&1",
       "birdies": 0,
@@ -4043,7 +4115,7 @@
       ]
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "event_id": 17,
       "holiday_id": 4,
       "match_id": 45,
@@ -4053,7 +4125,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "4&3",
       "birdies": 1,
@@ -4074,14 +4146,14 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "4&3",
       "birdies": 0,
       "chip_ins": 1,
       "partners": [],
       "opponents": [
-        "Peters"
+        "C. Peters"
       ]
     },
     {
@@ -4095,7 +4167,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "3&1",
       "birdies": 3,
@@ -4116,7 +4188,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "3&1",
       "birdies": 0,
@@ -4137,7 +4209,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "Europe",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "6&5",
       "birdies": 0,
@@ -4158,7 +4230,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "USA",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "6&5",
       "birdies": 0,
@@ -4221,7 +4293,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "Europe",
-      "pts": 0.0,
+      "pts": 0,
       "result": "Loss",
       "score": "1UP",
       "birdies": 0,
@@ -4242,7 +4314,7 @@
       "course": "Kaya Belek",
       "format": "Singles",
       "team": "USA",
-      "pts": 1.0,
+      "pts": 1,
       "result": "Win",
       "score": "1UP",
       "birdies": 0,
@@ -4263,8 +4335,8 @@
       "course": "Montgomerie",
       "player": "Watters",
       "rank": "1",
-      "score": 39.0,
-      "chip_ins": 0.0,
+      "score": 39,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4274,11 +4346,11 @@
       "country": "Turkey",
       "area": "Belek",
       "course": "Montgomerie",
-      "player": "Peters",
+      "player": "C. Peters",
       "rank": "2",
-      "score": 34.0,
-      "chip_ins": 0.0,
-      "birdies": 1.0
+      "score": 34,
+      "chip_ins": 0,
+      "birdies": 1
     },
     {
       "event_id": 18,
@@ -4289,8 +4361,8 @@
       "course": "Montgomerie",
       "player": "J. Witt",
       "rank": "3",
-      "score": 34.0,
-      "chip_ins": 0.0,
+      "score": 34,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4302,8 +4374,8 @@
       "course": "Montgomerie",
       "player": "James",
       "rank": "4",
-      "score": 34.0,
-      "chip_ins": 0.0,
+      "score": 34,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4315,9 +4387,9 @@
       "course": "Montgomerie",
       "player": "Condon",
       "rank": "5",
-      "score": 32.0,
-      "chip_ins": 0.0,
-      "birdies": 2.0
+      "score": 32,
+      "chip_ins": 0,
+      "birdies": 2
     },
     {
       "event_id": 18,
@@ -4328,8 +4400,8 @@
       "course": "Montgomerie",
       "player": "Lowy",
       "rank": "6",
-      "score": 31.0,
-      "chip_ins": 0.0,
+      "score": 31,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4341,8 +4413,8 @@
       "course": "Montgomerie",
       "player": "S. Barker",
       "rank": "7",
-      "score": 29.0,
-      "chip_ins": 0.0,
+      "score": 29,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4354,9 +4426,9 @@
       "course": "Montgomerie",
       "player": "Cranham",
       "rank": "8",
-      "score": 28.0,
-      "chip_ins": 0.0,
-      "birdies": 1.0
+      "score": 28,
+      "chip_ins": 0,
+      "birdies": 1
     },
     {
       "event_id": 18,
@@ -4367,9 +4439,9 @@
       "course": "Montgomerie",
       "player": "O'Rourke",
       "rank": "9",
-      "score": 28.0,
-      "chip_ins": 0.0,
-      "birdies": 3.0
+      "score": 28,
+      "chip_ins": 0,
+      "birdies": 3
     },
     {
       "event_id": 18,
@@ -4380,8 +4452,8 @@
       "course": "Montgomerie",
       "player": "McLachlan",
       "rank": "10",
-      "score": 23.0,
-      "chip_ins": 0.0,
+      "score": 23,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4393,8 +4465,8 @@
       "course": "Montgomerie",
       "player": "Mulligan",
       "rank": "11",
-      "score": 23.0,
-      "chip_ins": 0.0,
+      "score": 23,
+      "chip_ins": 0,
       "birdies": null
     },
     {
@@ -4443,7 +4515,7 @@
       "country": "Spain",
       "area": "Malaga",
       "course": "Miguel Angel Jimenez Academy",
-      "player": "Peters",
+      "player": "C. Peters",
       "rank": "3",
       "score": null,
       "chip_ins": null,
@@ -4603,7 +4675,7 @@
       "rank": "Unknown",
       "score": null,
       "chip_ins": null,
-      "birdies": 1.0
+      "birdies": 1
     },
     {
       "event_id": 10,
@@ -4638,7 +4710,7 @@
       "country": "Spain",
       "area": "Murcia",
       "course": "Saurines",
-      "player": "Peters",
+      "player": "C. Peters",
       "rank": "Unknown",
       "score": null,
       "chip_ins": null,
@@ -4791,7 +4863,7 @@
         {
           "Date": "2023-05-28",
           "Course": "Saurines",
-          "DOTD": "Peters",
+          "DOTD": "C. Peters",
           "Description": "Running over Cranham in the buggie"
         }
       ]
@@ -4917,7 +4989,7 @@
     },
     {
       "holiday_id": 1,
-      "player": "Peters",
+      "player": "C. Peters",
       "birdies": 0
     },
     {
@@ -4977,7 +5049,7 @@
     },
     {
       "holiday_id": 2,
-      "player": "Peters",
+      "player": "C. Peters",
       "birdies": 0
     },
     {
@@ -5042,7 +5114,7 @@
     },
     {
       "holiday_id": 3,
-      "player": "Peters",
+      "player": "C. Peters",
       "birdies": 0
     },
     {
@@ -5102,7 +5174,7 @@
     },
     {
       "holiday_id": 4,
-      "player": "Peters",
+      "player": "C. Peters",
       "birdies": 4
     },
     {
@@ -5121,8 +5193,8 @@
       "player": "Brown",
       "partner": "James",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5131,8 +5203,8 @@
       "player": "Brown",
       "partner": "S. Barker",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5141,8 +5213,8 @@
       "player": "Condon",
       "partner": "J. Witt",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 0.0,
+      "pts": 1,
+      "win_pct": 0,
       "wins": 0,
       "halves": 2,
       "losses": 0
@@ -5161,8 +5233,8 @@
       "player": "Condon",
       "partner": "Lowy",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5172,7 +5244,7 @@
       "partner": "McLachlan",
       "matches": 4,
       "pts": 1.833,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 4,
       "losses": 0
@@ -5181,7 +5253,7 @@
       "player": "Condon",
       "partner": "S. Barker",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333,
       "wins": 1,
       "halves": 0,
@@ -5191,7 +5263,7 @@
       "player": "Cranham",
       "partner": "D. Witt",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5201,15 +5273,15 @@
       "player": "Cranham",
       "partner": "Mulligan",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
     },
     {
       "player": "Cranham",
-      "partner": "Peters",
+      "partner": "C. Peters",
       "matches": 5,
       "pts": 3.625,
       "win_pct": 0.6,
@@ -5222,7 +5294,7 @@
       "partner": "Rogers",
       "matches": 2,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 1
@@ -5232,7 +5304,7 @@
       "partner": "Watters",
       "matches": 3,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 2
@@ -5241,7 +5313,7 @@
       "player": "D. Witt",
       "partner": "Cranham",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5252,7 +5324,7 @@
       "partner": "Mulligan",
       "matches": 2,
       "pts": 1.333,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 3,
       "losses": 0
@@ -5269,10 +5341,10 @@
     },
     {
       "player": "D. Witt",
-      "partner": "Peters",
+      "partner": "C. Peters",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5281,8 +5353,8 @@
       "player": "D. Witt",
       "partner": "Rogers",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5291,8 +5363,8 @@
       "player": "D. Witt",
       "partner": "Watters",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5301,8 +5373,8 @@
       "player": "J. Barker",
       "partner": "O'Rourke",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5311,8 +5383,8 @@
       "player": "J. Barker",
       "partner": "Watters",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5321,8 +5393,8 @@
       "player": "J. Witt",
       "partner": "Condon",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 0.0,
+      "pts": 1,
+      "win_pct": 0,
       "wins": 0,
       "halves": 2,
       "losses": 0
@@ -5331,7 +5403,7 @@
       "player": "J. Witt",
       "partner": "James",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5341,7 +5413,7 @@
       "player": "J. Witt",
       "partner": "Lowy",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667,
       "wins": 2,
       "halves": 0,
@@ -5352,7 +5424,7 @@
       "partner": "McLachlan",
       "matches": 3,
       "pts": 1.5,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 3,
       "losses": 0
@@ -5361,8 +5433,8 @@
       "player": "J. Witt",
       "partner": "S. Barker",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5371,8 +5443,8 @@
       "player": "James",
       "partner": "Brown",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5391,7 +5463,7 @@
       "player": "James",
       "partner": "J. Witt",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5401,7 +5473,7 @@
       "player": "James",
       "partner": "Lowy",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5421,8 +5493,8 @@
       "player": "James",
       "partner": "S. Barker",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 2
@@ -5431,8 +5503,8 @@
       "player": "Lowy",
       "partner": "Condon",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5441,7 +5513,7 @@
       "player": "Lowy",
       "partner": "J. Witt",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667,
       "wins": 2,
       "halves": 0,
@@ -5451,7 +5523,7 @@
       "player": "Lowy",
       "partner": "James",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5,
       "wins": 1,
       "halves": 0,
@@ -5461,8 +5533,8 @@
       "player": "Lowy",
       "partner": "S. Barker",
       "matches": 4,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 4
@@ -5472,7 +5544,7 @@
       "partner": "Condon",
       "matches": 4,
       "pts": 1.833,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 4,
       "losses": 0
@@ -5482,7 +5554,7 @@
       "partner": "J. Witt",
       "matches": 3,
       "pts": 1.5,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 3,
       "losses": 0
@@ -5501,8 +5573,8 @@
       "player": "Mulligan",
       "partner": "Cranham",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5512,7 +5584,7 @@
       "partner": "D. Witt",
       "matches": 2,
       "pts": 1.333,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 3,
       "losses": 0
@@ -5531,8 +5603,8 @@
       "player": "Mulligan",
       "partner": "Watters",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5551,8 +5623,8 @@
       "player": "O'Rourke",
       "partner": "J. Barker",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5571,8 +5643,8 @@
       "player": "O'Rourke",
       "partner": "Rogers",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5582,13 +5654,13 @@
       "partner": "Watters",
       "matches": 1,
       "pts": 0.5,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 0
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "partner": "Cranham",
       "matches": 5,
       "pts": 3.625,
@@ -5598,27 +5670,27 @@
       "losses": 1
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "partner": "D. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "partner": "Rogers",
       "matches": 3,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 2
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "partner": "Watters",
       "matches": 4,
       "pts": 2.625,
@@ -5632,7 +5704,7 @@
       "partner": "Cranham",
       "matches": 2,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 1
@@ -5641,8 +5713,8 @@
       "player": "Rogers",
       "partner": "D. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5651,18 +5723,18 @@
       "player": "Rogers",
       "partner": "O'Rourke",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
     },
     {
       "player": "Rogers",
-      "partner": "Peters",
+      "partner": "C. Peters",
       "matches": 3,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 2
@@ -5672,7 +5744,7 @@
       "partner": "Watters",
       "matches": 2,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 1
@@ -5681,8 +5753,8 @@
       "player": "S. Barker",
       "partner": "Brown",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5691,7 +5763,7 @@
       "player": "S. Barker",
       "partner": "Condon",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333,
       "wins": 1,
       "halves": 0,
@@ -5701,8 +5773,8 @@
       "player": "S. Barker",
       "partner": "J. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5711,8 +5783,8 @@
       "player": "S. Barker",
       "partner": "James",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 2
@@ -5721,8 +5793,8 @@
       "player": "S. Barker",
       "partner": "Lowy",
       "matches": 4,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 4
@@ -5732,7 +5804,7 @@
       "partner": "Cranham",
       "matches": 3,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 2
@@ -5741,8 +5813,8 @@
       "player": "Watters",
       "partner": "D. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5751,8 +5823,8 @@
       "player": "Watters",
       "partner": "J. Barker",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0,
+      "pts": 0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 0,
       "losses": 1
@@ -5761,8 +5833,8 @@
       "player": "Watters",
       "partner": "Mulligan",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0,
+      "pts": 1,
+      "win_pct": 1,
       "wins": 1,
       "halves": 0,
       "losses": 0
@@ -5772,14 +5844,14 @@
       "partner": "O'Rourke",
       "matches": 1,
       "pts": 0.5,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 0
     },
     {
       "player": "Watters",
-      "partner": "Peters",
+      "partner": "C. Peters",
       "matches": 4,
       "pts": 2.625,
       "win_pct": 0.5,
@@ -5792,7 +5864,7 @@
       "partner": "Rogers",
       "matches": 2,
       "pts": 0.625,
-      "win_pct": 0.0,
+      "win_pct": 0,
       "wins": 0,
       "halves": 1,
       "losses": 1
@@ -5803,92 +5875,92 @@
       "player": "Brown",
       "opponent": "Cranham",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "Brown",
       "opponent": "D. Witt",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "Brown",
       "opponent": "O'Rourke",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Condon",
       "opponent": "Cranham",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Condon",
       "opponent": "D. Witt",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
       "player": "Condon",
       "opponent": "J. Barker",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Condon",
       "opponent": "Mulligan",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Condon",
       "opponent": "O'Rourke",
       "matches": 3,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "Condon",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Condon",
       "opponent": "Rogers",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "Condon",
       "opponent": "Watters",
       "matches": 5,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.4
     },
     {
       "player": "Cranham",
       "opponent": "Brown",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "Cranham",
       "opponent": "Condon",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Cranham",
@@ -5901,70 +5973,70 @@
       "player": "Cranham",
       "opponent": "James",
       "matches": 7,
-      "pts": 4.0,
+      "pts": 4,
       "win_pct": 0.571
     },
     {
       "player": "Cranham",
       "opponent": "Lowy",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Cranham",
       "opponent": "McLachlan",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Cranham",
       "opponent": "S. Barker",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
       "player": "D. Witt",
       "opponent": "Brown",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "D. Witt",
       "opponent": "Condon",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
       "player": "D. Witt",
       "opponent": "J. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "D. Witt",
       "opponent": "James",
       "matches": 4,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.25
     },
     {
       "player": "D. Witt",
       "opponent": "Lowy",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "D. Witt",
       "opponent": "McLachlan",
       "matches": 4,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.5
     },
     {
@@ -5972,35 +6044,35 @@
       "opponent": "S. Barker",
       "matches": 2,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "J. Barker",
       "opponent": "Condon",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "J. Barker",
       "opponent": "J. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "J. Barker",
       "opponent": "Lowy",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "J. Barker",
       "opponent": "S. Barker",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "J. Witt",
@@ -6013,21 +6085,21 @@
       "player": "J. Witt",
       "opponent": "D. Witt",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "J. Witt",
       "opponent": "J. Barker",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "J. Witt",
       "opponent": "Mulligan",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
@@ -6039,17 +6111,17 @@
     },
     {
       "player": "J. Witt",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
       "player": "J. Witt",
       "opponent": "Rogers",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "J. Witt",
@@ -6062,183 +6134,183 @@
       "player": "James",
       "opponent": "Cranham",
       "matches": 7,
-      "pts": 3.0,
+      "pts": 3,
       "win_pct": 0.429
     },
     {
       "player": "James",
       "opponent": "D. Witt",
       "matches": 4,
-      "pts": 3.0,
+      "pts": 3,
       "win_pct": 0.75
     },
     {
       "player": "James",
       "opponent": "Mulligan",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "James",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 4,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.5
     },
     {
       "player": "James",
       "opponent": "Rogers",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "James",
       "opponent": "Watters",
       "matches": 1,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "Lowy",
       "opponent": "Cranham",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Lowy",
       "opponent": "D. Witt",
       "matches": 2,
-      "pts": 2.0,
-      "win_pct": 1.0
+      "pts": 2,
+      "win_pct": 1
     },
     {
       "player": "Lowy",
       "opponent": "J. Barker",
       "matches": 2,
-      "pts": 2.0,
-      "win_pct": 1.0
+      "pts": 2,
+      "win_pct": 1
     },
     {
       "player": "Lowy",
       "opponent": "O'Rourke",
       "matches": 4,
-      "pts": 3.0,
+      "pts": 3,
       "win_pct": 0.75
     },
     {
       "player": "Lowy",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
       "player": "Lowy",
       "opponent": "Rogers",
       "matches": 2,
-      "pts": 2.0,
-      "win_pct": 1.0
+      "pts": 2,
+      "win_pct": 1
     },
     {
       "player": "Lowy",
       "opponent": "Watters",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
       "player": "McLachlan",
       "opponent": "Cranham",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "McLachlan",
       "opponent": "D. Witt",
       "matches": 4,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.5
     },
     {
       "player": "McLachlan",
       "opponent": "Mulligan",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "McLachlan",
       "opponent": "O'Rourke",
       "matches": 4,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "McLachlan",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "McLachlan",
       "opponent": "Rogers",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "McLachlan",
       "opponent": "Watters",
       "matches": 2,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "Mulligan",
       "opponent": "Condon",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Mulligan",
       "opponent": "J. Witt",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
       "player": "Mulligan",
       "opponent": "James",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Mulligan",
       "opponent": "McLachlan",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "Mulligan",
       "opponent": "S. Barker",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "O'Rourke",
       "opponent": "Brown",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "O'Rourke",
@@ -6258,7 +6330,7 @@
       "player": "O'Rourke",
       "opponent": "Lowy",
       "matches": 4,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.25
     },
     {
@@ -6272,91 +6344,91 @@
       "player": "O'Rourke",
       "opponent": "S. Barker",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "Condon",
       "matches": 2,
-      "pts": 2.0,
-      "win_pct": 1.0
+      "pts": 2,
+      "win_pct": 1
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "J. Witt",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "James",
       "matches": 4,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.5
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "Lowy",
       "matches": 3,
-      "pts": 2.0,
+      "pts": 2,
       "win_pct": 0.667
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "McLachlan",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
-      "player": "Peters",
+      "player": "C. Peters",
       "opponent": "S. Barker",
       "matches": 4,
-      "pts": 4.0,
-      "win_pct": 1.0
+      "pts": 4,
+      "win_pct": 1
     },
     {
       "player": "Rogers",
       "opponent": "Condon",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "Rogers",
       "opponent": "J. Witt",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Rogers",
       "opponent": "James",
       "matches": 1,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Rogers",
       "opponent": "Lowy",
       "matches": 2,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "Rogers",
       "opponent": "McLachlan",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "S. Barker",
       "opponent": "Cranham",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
@@ -6370,42 +6442,42 @@
       "player": "S. Barker",
       "opponent": "J. Barker",
       "matches": 1,
-      "pts": 1.0,
-      "win_pct": 1.0
+      "pts": 1,
+      "win_pct": 1
     },
     {
       "player": "S. Barker",
       "opponent": "Mulligan",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "S. Barker",
       "opponent": "O'Rourke",
       "matches": 2,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.5
     },
     {
       "player": "S. Barker",
-      "opponent": "Peters",
+      "opponent": "C. Peters",
       "matches": 4,
-      "pts": 0.0,
-      "win_pct": 0.0
+      "pts": 0,
+      "win_pct": 0
     },
     {
       "player": "S. Barker",
       "opponent": "Watters",
       "matches": 4,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.25
     },
     {
       "player": "Watters",
       "opponent": "Condon",
       "matches": 5,
-      "pts": 3.0,
+      "pts": 3,
       "win_pct": 0.6
     },
     {
@@ -6420,13 +6492,13 @@
       "opponent": "James",
       "matches": 1,
       "pts": 0.5,
-      "win_pct": 0.0
+      "win_pct": 0
     },
     {
       "player": "Watters",
       "opponent": "Lowy",
       "matches": 3,
-      "pts": 1.0,
+      "pts": 1,
       "win_pct": 0.333
     },
     {
@@ -6440,7 +6512,7 @@
       "player": "Watters",
       "opponent": "S. Barker",
       "matches": 4,
-      "pts": 3.0,
+      "pts": 3,
       "win_pct": 0.75
     }
   ],
@@ -6469,7 +6541,7 @@
       "players": [
         "Lowy"
       ],
-      "pts": 3.0,
+      "pts": 3,
       "country": "Spain",
       "area": "Malaga"
     },
@@ -6478,7 +6550,7 @@
       "players": [
         "James"
       ],
-      "pts": 3.0,
+      "pts": 3,
       "country": "Turkey",
       "area": "Belek"
     }
@@ -6493,8 +6565,8 @@
     {
       "date": "2022-05-27",
       "holiday_id": 1,
-      "europe_pts": 2.0,
-      "usa_pts": 2.0
+      "europe_pts": 2,
+      "usa_pts": 2
     },
     {
       "date": "2022-05-28",
@@ -6505,14 +6577,14 @@
     {
       "date": "2022-05-29",
       "holiday_id": 1,
-      "europe_pts": 3.0,
-      "usa_pts": 3.0
+      "europe_pts": 3,
+      "usa_pts": 3
     },
     {
       "date": "2023-05-25",
       "holiday_id": 2,
-      "europe_pts": 2.0,
-      "usa_pts": 1.0
+      "europe_pts": 2,
+      "usa_pts": 1
     },
     {
       "date": "2023-05-26",
@@ -6529,14 +6601,14 @@
     {
       "date": "2024-09-12",
       "holiday_id": 3,
-      "europe_pts": 1.0,
-      "usa_pts": 2.0
+      "europe_pts": 1,
+      "usa_pts": 2
     },
     {
       "date": "2024-09-13",
       "holiday_id": 3,
-      "europe_pts": 2.0,
-      "usa_pts": 1.0
+      "europe_pts": 2,
+      "usa_pts": 1
     },
     {
       "date": "2024-09-15",
@@ -6547,14 +6619,14 @@
     {
       "date": "2025-05-14",
       "holiday_id": 4,
-      "europe_pts": 1.0,
-      "usa_pts": 2.0
+      "europe_pts": 1,
+      "usa_pts": 2
     },
     {
       "date": "2025-05-15",
       "holiday_id": 4,
-      "europe_pts": 2.0,
-      "usa_pts": 1.0
+      "europe_pts": 2,
+      "usa_pts": 1
     },
     {
       "date": "2025-05-16",
@@ -6576,18 +6648,146 @@
     },
     {
       "format": "2x2 Scramble",
-      "europe_pts": 4.0,
-      "usa_pts": 5.0
+      "europe_pts": 4,
+      "usa_pts": 5
     },
     {
       "format": "Singles",
-      "europe_pts": 10.0,
-      "usa_pts": 16.0
+      "europe_pts": 10,
+      "usa_pts": 16
     },
     {
       "format": "Kingpin",
-      "europe_pts": 0.0,
-      "usa_pts": 1.0
+      "europe_pts": 0,
+      "usa_pts": 1
+    }
+  ],
+  "players": [
+    {
+      "player_id": 1,
+      "name": "J. Witt",
+      "first_name": "James",
+      "last_name": "Witt",
+      "attending": 1
+    },
+    {
+      "player_id": 2,
+      "name": "Watters",
+      "first_name": "Cameron",
+      "last_name": "Watters",
+      "attending": 1
+    },
+    {
+      "player_id": 3,
+      "name": "D. Witt",
+      "first_name": "Daniel",
+      "last_name": "Witt",
+      "attending": 1
+    },
+    {
+      "player_id": 4,
+      "name": "Lowy",
+      "first_name": "Gregory",
+      "last_name": "Lowy",
+      "attending": 1
+    },
+    {
+      "player_id": 5,
+      "name": "James",
+      "first_name": "Alexander",
+      "last_name": "James",
+      "attending": 1
+    },
+    {
+      "player_id": 6,
+      "name": "S. Barker",
+      "first_name": "Simon",
+      "last_name": "Barker",
+      "attending": 1
+    },
+    {
+      "player_id": 7,
+      "name": "O'Rourke",
+      "first_name": "Michael",
+      "last_name": "O'Rourke",
+      "attending": 1
+    },
+    {
+      "player_id": 8,
+      "name": "Cranham",
+      "first_name": "Alexander",
+      "last_name": "Cranham",
+      "attending": 0
+    },
+    {
+      "player_id": 9,
+      "name": "C. Peters",
+      "first_name": "Callum",
+      "last_name": "Peters",
+      "attending": 1
+    },
+    {
+      "player_id": 10,
+      "name": "McLachlan",
+      "first_name": "Joel",
+      "last_name": "McLachlan",
+      "attending": 0
+    },
+    {
+      "player_id": 11,
+      "name": "Condon",
+      "first_name": "Jack",
+      "last_name": "Condon",
+      "attending": 1
+    },
+    {
+      "player_id": 12,
+      "name": "Mulligan",
+      "first_name": "Thomas",
+      "last_name": "Mulligan",
+      "attending": 0
+    },
+    {
+      "player_id": 13,
+      "name": "Rogers",
+      "first_name": "James",
+      "last_name": "Rogers",
+      "attending": 0
+    },
+    {
+      "player_id": 14,
+      "name": "J. Barker",
+      "first_name": "James",
+      "last_name": "Barker",
+      "attending": 0
+    },
+    {
+      "player_id": 15,
+      "name": "Brown",
+      "first_name": "Charlton",
+      "last_name": "Brown",
+      "attending": 0
+    },
+    {
+      "player_id": 16,
+      "name": "Skeet",
+      "first_name": "Harvey",
+      "last_name": "Skeet",
+      "attending": 1
+    },
+    {
+      "player_id": 17,
+      "name": "K. Peters",
+      "first_name": "Kieran",
+      "last_name": "Peters",
+      "attending": 1
+    },
+    {
+      "player_id": 18,
+      "name": "Champion",
+      "first_name": "Ollie",
+      "last_name": "Champion",
+      "attending": 1
     }
   ]
 }
