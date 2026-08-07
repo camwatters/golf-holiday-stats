@@ -318,8 +318,20 @@ function Hero({ data }) {
   const w = useWindowWidth()
   const isMobile = w < 640
   const totalMatches = [...new Set(data.player_matches.map(r => `${r.holiday_id}-${r.match_id}`))].length
-  const usaWins = data.rivalry.filter(r => r.winner === 'USA').length
-  const euWins  = data.rivalry.filter(r => r.winner === 'Europe' || r.winner === 'Tie').length
+
+  // Cup holder retains on a Tie (Ryder Cup convention) — track who's actually
+  // holding it after each holiday rather than assuming it's always Europe.
+  const holderByHoliday = {}
+  let euWins = 0, usaWins = 0
+  {
+    let holder = null
+    for (const r of [...data.rivalry].sort((a, b) => a.holiday_id - b.holiday_id)) {
+      if (r.winner === 'Europe' || r.winner === 'USA') holder = r.winner
+      holderByHoliday[r.holiday_id] = holder
+      if (holder === 'Europe') euWins++
+      else if (holder === 'USA') usaWins++
+    }
+  }
 
   const mvpByHoliday = {}
   ;(data.holiday_mvp || []).forEach(m => { mvpByHoliday[m.holiday_id] = m })
@@ -418,6 +430,7 @@ function Hero({ data }) {
           const info = infoByHoliday[r.holiday_id] || { courses: [], eurCaptain: '', usaCaptain: '' }
           const { courses, eurCaptain, usaCaptain } = info
           const isHovered = hoveredHoliday === r.holiday_id
+          const badgeTeam = r.winner === 'Tie' ? holderByHoliday[r.holiday_id] : r.winner
           return (
             <div
               key={r.holiday_id}
@@ -440,8 +453,8 @@ function Hero({ data }) {
                 <span style={{
                   flexShrink: 0,
                   fontSize: 11, fontWeight: 600, padding: '2px 8px', borderRadius: 99,
-                  background: r.winner === 'USA' ? 'rgba(252,165,165,0.2)' : 'rgba(147,197,253,0.2)',
-                  color: r.winner === 'USA' ? '#fca5a5' : '#93c5fd',
+                  background: badgeTeam === 'USA' ? 'rgba(252,165,165,0.2)' : badgeTeam === 'Europe' ? 'rgba(147,197,253,0.2)' : 'rgba(255,255,255,0.15)',
+                  color: badgeTeam === 'USA' ? '#fca5a5' : badgeTeam === 'Europe' ? '#93c5fd' : 'rgba(255,255,255,0.7)',
                 }}>{r.winner === 'Tie' ? 'Retained' : r.winner}</span>
               </div>
 
@@ -872,7 +885,7 @@ function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
 }
 
 // ── Player Spotlight ───────────────────────────────────────────────────────
-function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats, players }) {
+function PlayerSpotlight({ leaderboard, playerMatches, players }) {
   const [selected, setSelected] = useState(leaderboard[0]?.player)
   const [hoveredTile, setHoveredTile] = useState(null)
   const tileLeaveTimer = useRef(null)
@@ -881,8 +894,6 @@ function PlayerSpotlight({ leaderboard, playerMatches, pairStats, vsStats, playe
   const rank   = leaderboard.findIndex(p => p.player === selected) + 1
   const playerInfo = (players || []).find(p => p.name === selected)
   const fullName = playerInfo ? `${playerInfo.first_name} ${playerInfo.last_name}` : selected
-
-  const myVs    = vsStats.filter(r => r.player === selected)
 
   // Head-to-head matches only (excludes Texas Scramble)
   const myMatches = playerMatches.filter(m => m.player === selected && m.format !== 'Texas Scramble')
@@ -1999,14 +2010,21 @@ function PasswordGate({ onUnlock }) {
 // ── App ────────────────────────────────────────────────────────────────────
 export default function App() {
   const [data, setData]         = useState(null)
+  const [loadError, setLoadError] = useState(null)
   const [unlocked, setUnlocked] = useState(() => !!sessionStorage.getItem('rhc_unlocked'))
   const isMobile = useWindowWidth() < 640
 
   useEffect(() => {
-    fetch('/data/golf.json').then(r => r.json()).then(setData)
+    fetch('/data/golf.json').then(r => r.json()).then(setData).catch(e => setLoadError(e.message))
   }, [])
 
   if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />
+
+  if (loadError) return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', color: G.muted, fontSize: 16 }}>
+      Couldn't load stats — try refreshing.
+    </div>
+  )
 
   if (!data) return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', color: G.muted, fontSize: 16 }}>
@@ -2026,7 +2044,7 @@ export default function App() {
       <RivalryChart rivalry={data.rivalry} rivalryByDay={data.rivalry_by_day} rivalryByFormat={data.rivalry_by_format} holidays={data.holidays} />
 
       <SectionTitle id="sec-spotlight">Player Spotlight</SectionTitle>
-      <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} pairStats={data.pair_stats} vsStats={data.vs_stats} players={data.players} />
+      <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} players={data.players} />
 
       <SectionTitle id="sec-profile">Player Profile & Green Towel</SectionTitle>
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>

@@ -16,6 +16,7 @@ holidays   = pd.read_excel(XLSX, sheet_name="Holidays")
 matchdays  = pd.read_excel(XLSX, sheet_name="Matchdays")
 matches    = pd.read_excel(XLSX, sheet_name="Matches")
 green_jkts = pd.read_excel(XLSX, sheet_name="Green Jackets")
+players    = pd.read_excel(XLSX, sheet_name="Players")
 
 # ── Clean ─────────────────────────────────────────────────────────────────
 def clean_str(df):
@@ -23,7 +24,7 @@ def clean_str(df):
         df[col] = df[col].astype(str).str.strip().replace("nan", "")
     return df
 
-for df in (holidays, matchdays, matches, green_jkts):
+for df in (holidays, matchdays, matches, green_jkts, players):
     clean_str(df)
 
 # Drop blank rows (Excel padding)
@@ -106,13 +107,24 @@ for _, m in matches.iterrows():
 
 pm = pd.DataFrame(records)
 
-# ── One-hot encode partners & opponents ───────────────────────────────────
-all_players = sorted(pm["player"].unique())
+# ── Players roster ────────────────────────────────────────────────────────
+# Players sheet is the source of truth for full names / attending status.
+# Anyone on the roster who hasn't played a match yet (new_2026) still needs
+# a leaderboard row so they show up (zeroed out) in the 2026 views.
+players_out = [
+    {
+        "player_id":  int(r["player_id"]),
+        "name":       str(r["name"]),
+        "first_name": str(r["first_name"]),
+        "last_name":  str(r["last_name"]),
+        "attending":  int(r["attending"]),
+    }
+    for _, r in players.iterrows()
+]
+roster_names  = players["name"].tolist()
+roster_pid    = dict(zip(players["name"], players["player_id"]))
 
-for p in all_players:
-    safe = p.replace("'", "").replace(" ", "_").replace(".", "")
-    pm[f"partner_{safe}"]  = pm["partners"].apply(lambda lst: int(p in lst))
-    pm[f"opponent_{safe}"] = pm["opponents"].apply(lambda lst: int(p in lst))
+all_players = sorted(set(pm["player"].unique()) | set(roster_names))
 
 # ── Format categories ─────────────────────────────────────────────────────
 SCRAMBLE_FMTS = {"Texas Scramble"}
@@ -236,13 +248,23 @@ for player in all_players:
         "holiday_wins":    holiday_mvp_counts.get(player, 0),
     })
 
-leaderboard.sort(key=lambda r: -r["total_pts"])
+ranked   = [r for r in leaderboard if r["total_matches"] > 0]
+unranked = [r for r in leaderboard if r["total_matches"] == 0]
+
+ranked.sort(key=lambda r: -r["total_pts"])
 prev_pts = prev_rank = None
-for i, row in enumerate(leaderboard):
+for i, row in enumerate(ranked):
     if row["total_pts"] != prev_pts:
         prev_rank = i + 1
         prev_pts  = row["total_pts"]
     row["rank"] = prev_rank
+
+unranked.sort(key=lambda r: roster_pid.get(r["player"], 9999))
+for row in unranked:
+    row["rank"] = 999
+    row["new_2026"] = True
+
+leaderboard = ranked + unranked
 
 # ── Rivalry ───────────────────────────────────────────────────────────────
 # Texas Scramble: sum all player pts per team (each player's pts reflects their
@@ -365,50 +387,12 @@ birdie_merged["gj_birdies"] = birdie_merged["gj_birdies"].fillna(0).astype(int)
 birdie_merged["birdies"] = birdie_merged["birdies"] + birdie_merged["gj_birdies"]
 birdie_out = birdie_merged[["holiday_id", "player", "birdies"]].to_dict(orient="records")
 
-# ── Partner/opponent win rates (for future dashboard use) ─────────────────
-def pct(n, d): return round(n/d, 3) if d > 0 else None
-
-pair_stats = []
-for player in all_players:
-    for partner in all_players:
-        if partner == player: continue
-        safe = partner.replace("'","").replace(" ","_").replace(".","")
-        rows = pm[(pm["player"] == player) & (pm[f"partner_{safe}"] == 1)]
-        if len(rows) == 0: continue
-        wins_n   = int((rows["result"]=="Win").sum())
-        halves_n = int(round(2 * (float(rows["pts"].sum()) - wins_n)))
-        losses_n = int(len(rows)) - wins_n - max(0, halves_n)
-        pair_stats.append({
-            "player": player, "partner": partner,
-            "matches": len(rows),
-            "pts":     round(float(rows["pts"].sum()), 3),
-            "win_pct": pct((rows["result"]=="Win").sum(), len(rows)),
-            "wins":    wins_n,
-            "halves":  max(0, halves_n),
-            "losses":  max(0, losses_n),
-        })
-
-vs_stats = []
-for player in all_players:
-    for opp in all_players:
-        if opp == player: continue
-        safe = opp.replace("'","").replace(" ","_").replace(".","")
-        rows = pm[(pm["player"] == player) & (pm[f"opponent_{safe}"] == 1)]
-        if len(rows) == 0: continue
-        vs_stats.append({
-            "player": player, "opponent": opp,
-            "matches": len(rows),
-            "pts":     round(float(rows["pts"].sum()), 3),
-            "win_pct": pct((rows["result"]=="Win").sum(), len(rows)),
-        })
-
 # ── Holidays ──────────────────────────────────────────────────────────────
 holidays_out = holidays.to_dict(orient="records")
 
 # ── Write ─────────────────────────────────────────────────────────────────
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 
-# pm for JSON: drop one-hot columns (too wide), keep key fields
 pm_json = pm[[
     "player","event_id","holiday_id","match_id","date","country","area",
     "course","format","team","pts","result","score","birdies","chip_ins",
@@ -423,11 +407,10 @@ output = {
     "green_jackets":     gj_out,
     "awards":            awards,
     "birdie_by_holiday": birdie_out,
-    "pair_stats":        pair_stats,
-    "vs_stats":          vs_stats,
     "holiday_mvp":       holiday_mvp_list,
     "rivalry_by_day":    rivalry_by_day,
     "rivalry_by_format": rivalry_by_format,
+    "players":           players_out,
 }
 
 def sanitize(obj):
@@ -447,8 +430,6 @@ print(f"  players:         {len(all_players)}")
 print(f"  player_matches:  {len(pm_json)} rows")
 print(f"  leaderboard:     {len(leaderboard)} players")
 print(f"  rivalry:         {len(rivalry)} holidays")
-print(f"  pair_stats:      {len(pair_stats)} combos")
-print(f"  vs_stats:        {len(vs_stats)} combos")
 print()
 print("Top 5:")
 for r in leaderboard[:5]:
