@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, Fragment } from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, Cell, LineChart, Line, Legend,
@@ -547,6 +547,15 @@ const LB_TAIL = [
   { key: 'near_pin',        label: 'Near Pin',   align: 'center', width: '3%',  title: 'Nearest Pin wins' },
   { key: 'dotd',            label: 'DOTD',       align: 'center', width: '3%',  title: 'Dick Of The Day' },
 ]
+const LB_MOBILE_SORT = [
+  { key: 'rank',       label: 'Rank' },
+  { key: 'total_pts',  label: 'Total Pts' },
+  { key: 'ppg',        label: 'PPG' },
+  { key: 'apps',       label: 'Trips' },
+  { key: 'birdies',    label: 'Birdies' },
+  { key: 'chip_ins',   label: 'Chip-ins' },
+  { key: 'dotd',       label: 'DOTD' },
+]
 
 function Leaderboard({ data, playerMatches, players }) {
   const [sortKey, setSortKey]       = useState('rank')
@@ -556,6 +565,7 @@ function Leaderboard({ data, playerMatches, players }) {
   const [expanded, setExpanded]     = useState(null)
   const [hoveredDot, setHoveredDot] = useState(null)
   const [filter2026, setFilter2026] = useState('all')
+  const isMobile = useWindowWidth() < 768
 
   const attending2026 = new Set((players || []).filter(p => p.attending).map(p => p.name))
 
@@ -563,6 +573,7 @@ function Leaderboard({ data, playerMatches, players }) {
   data.forEach(p => { teamOf[p.player] = p.team })
 
   const cols = [...LB_BASE, ...(pairsOpen ? LB_PAIRS_EXPANDED : LB_PAIRS_COMBINED), ...LB_TAIL]
+  const mobileDetailCols = [...LB_PAIRS_COMBINED, ...LB_TAIL]
 
   const sorted = [...data].sort((a, b) => {
     const av = a[sortKey], bv = b[sortKey]
@@ -577,7 +588,173 @@ function Leaderboard({ data, playerMatches, players }) {
     else { setSortKey(key); setSortAsc(key === 'rank' || key === 'player') }
   }
 
+  const formGroups = (player) => {
+    const matches = (playerMatches || [])
+      .filter(m => m.player === player)
+      .sort((a, b) => new Date(b.date) - new Date(a.date) || b.match_id - a.match_id)
+    const groups = []
+    matches.forEach(m => {
+      const last = groups[groups.length - 1]
+      if (!last || last.holiday_id !== m.holiday_id) groups.push({ holiday_id: m.holiday_id, area: m.area, matches: [] })
+      groups[groups.length - 1].matches.push(m)
+    })
+    return groups
+  }
+
   const pairsCols = pairsOpen ? LB_PAIRS_EXPANDED.length : LB_PAIRS_COMBINED.length
+
+  const FilterPills = ({ dark }) => (
+    <div data-no-export style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+      {['all', 'highlight', 'focus'].map(mode => (
+        <button
+          key={mode}
+          onClick={e => { e.stopPropagation(); setFilter2026(mode) }}
+          style={{
+            flex: 1, padding: '6px 14px', borderRadius: 99, fontSize: 12, fontWeight: 600,
+            cursor: 'pointer',
+            border: dark
+              ? `1.5px solid ${filter2026 === mode ? '#fff' : 'rgba(255,255,255,0.4)'}`
+              : `1.5px solid ${filter2026 === mode ? G.green : G.border}`,
+            background: dark
+              ? (filter2026 === mode ? 'rgba(255,255,255,0.2)' : 'transparent')
+              : (filter2026 === mode ? G.greenLight : 'transparent'),
+            color: dark ? '#fff' : (filter2026 === mode ? G.green : G.muted),
+            transition: 'all 0.15s',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {mode === 'all' ? 'All Players' : mode === 'highlight' ? '2026 Players' : '2026 Focus'}
+        </button>
+      ))}
+    </div>
+  )
+
+  if (isMobile) return (
+    <Card id="leaderboard" noPad>
+      <div style={{ padding: '14px 14px 12px', borderBottom: `2px solid ${G.border}` }}>
+        <div style={{ paddingRight: 68 }}><FilterPills /></div>
+        <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
+          <select
+            value={sortKey}
+            onChange={e => { const k = e.target.value; setSortKey(k); setSortAsc(k === 'rank') }}
+            style={{
+              flex: 1, padding: '7px 10px', borderRadius: 8, border: `1px solid ${G.border}`,
+              background: G.card, color: G.text, fontSize: 13, fontWeight: 600,
+            }}
+          >
+            {LB_MOBILE_SORT.map(o => <option key={o.key} value={o.key}>Sort: {o.label}</option>)}
+          </select>
+          <button
+            onClick={() => setSortAsc(a => !a)}
+            aria-label="Toggle sort direction"
+            style={{
+              width: 38, borderRadius: 8, border: `1px solid ${G.border}`,
+              background: G.card, color: G.text, fontSize: 14, cursor: 'pointer',
+            }}
+          >{sortAsc ? '↑' : '↓'}</button>
+        </div>
+      </div>
+
+      {sorted.map(row => {
+        const isTop3 = row.rank <= 3
+        const isExpanded = expanded === row.player
+        const isAttending = attending2026.has(row.player)
+        const isNew2026 = !!row.new_2026
+        if (isNew2026 && filter2026 !== 'focus') return null
+        if (filter2026 === 'focus' && !isAttending && !isNew2026) return null
+        const isDimmed = filter2026 === 'highlight' && !isAttending
+        const groups = isExpanded ? formGroups(row.player) : []
+
+        return (
+          <div
+            key={row.player}
+            onClick={() => !isNew2026 && setExpanded(isExpanded ? null : row.player)}
+            style={{
+              padding: '12px 14px',
+              borderBottom: `1px solid ${G.border}`,
+              background: isNew2026 ? G.faint
+                : isExpanded ? (row.team === 'Europe' ? '#dbeafe' : row.team === 'USA' ? '#fee2e2' : G.greenLight)
+                : (row.team === 'Europe' ? '#f4f7fd' : row.team === 'USA' ? '#fdf4f4' : G.card),
+              opacity: isDimmed ? 0.35 : 1,
+              cursor: isNew2026 ? 'default' : 'pointer',
+              transition: 'background 0.12s, opacity 0.2s',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              {isNew2026
+                ? <div style={{ width: 28, flexShrink: 0, textAlign: 'center', fontSize: 11, color: G.muted }}>—</div>
+                : <RankBadge rank={row.rank} />}
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontWeight: 700, fontSize: 14, color: isNew2026 ? G.muted : G.text }}>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{row.player}</span>
+                  {!isNew2026 && isTop3 && <span style={{ fontSize: 11, color: G.gold, flexShrink: 0 }}>★</span>}
+                  {isNew2026 && <span style={{ fontSize: 10, color: G.muted, fontStyle: 'italic', flexShrink: 0 }}>2026</span>}
+                </div>
+                <div style={{ fontSize: 11, color: G.muted, marginTop: 2 }}>
+                  {isNew2026 ? 'No matches yet' : `${row.apps} trip${row.apps === 1 ? '' : 's'} · ${row.total_matches} match${row.total_matches === 1 ? '' : 'es'}`}
+                </div>
+              </div>
+              <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                <div style={{ fontWeight: 800, fontSize: 17, color: isNew2026 ? G.muted : (isTop3 ? G.green : G.text) }}>
+                  {isNew2026 ? '—' : fmt1(row.total_pts)}
+                </div>
+                <div style={{ fontSize: 11, color: G.muted }}>{isNew2026 ? '' : `${fmt3(row.ppg)} ppg`}</div>
+              </div>
+              {!isNew2026 && <span style={{ fontSize: 10, color: G.muted, flexShrink: 0 }}>{isExpanded ? '▴' : '▾'}</span>}
+            </div>
+
+            {isExpanded && !isNew2026 && (
+              <div style={{ marginTop: 12, paddingTop: 12, borderTop: `1px dashed ${G.border}` }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+                  {mobileDetailCols.map(col => {
+                    const v = row[col.key]
+                    const display = col.fmt ? col.fmt(v) : (v ?? '—')
+                    return (
+                      <div key={col.key} style={{
+                        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                        padding: '6px 10px', background: G.faint, borderRadius: 8,
+                      }}>
+                        <span style={{ fontSize: 11, color: G.muted }}>{col.label}</span>
+                        {col.key === 'dotd' && Number(v) >= 3
+                          ? <Badge color={G.red} bg={G.redLight}>{display}</Badge>
+                          : col.key === 'birdies' && Number(v) >= 5
+                            ? <Badge color={G.green} bg={G.greenLight}>{display}</Badge>
+                            : <span style={{ fontSize: 13, fontWeight: 600, color: G.text }}>{display}</span>}
+                      </div>
+                    )
+                  })}
+                </div>
+
+                {groups.length > 0 && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', marginTop: 14 }}>
+                    {groups.map((g, gi) => (
+                      <div key={g.holiday_id} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                        {gi > 0 && <div style={{ width: 1, height: 22, background: G.border, marginRight: 6 }} />}
+                        <div style={{ fontSize: 10, color: G.muted, fontWeight: 600, marginRight: 4, whiteSpace: 'nowrap' }}>{g.area}</div>
+                        {g.matches.map((m, mi) => {
+                          const dotKey = `lb-m-${row.player}-${g.holiday_id}-${mi}`
+                          return (
+                            <FormDot
+                              key={dotKey}
+                              match={m}
+                              isHovered={hoveredDot === dotKey}
+                              onEnter={() => setHoveredDot(dotKey)}
+                              onLeave={() => setHoveredDot(null)}
+                              teamOf={teamOf}
+                            />
+                          )
+                        })}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </Card>
+  )
 
   return (
     <Card id="leaderboard" noPad>
@@ -602,25 +779,7 @@ function Leaderboard({ data, playerMatches, players }) {
           <thead>
             <tr style={{ background: G.green, color: '#fff' }}>
               <th colSpan={LB_BASE.length} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 11, fontWeight: 600, letterSpacing: 0.5 }}>
-                <div data-no-export style={{ display: 'flex', gap: 6 }}>
-                  {['all', 'highlight', 'focus'].map(mode => (
-                    <button
-                      key={mode}
-                      onClick={e => { e.stopPropagation(); setFilter2026(mode) }}
-                      style={{
-                        flex: 1, padding: '6px 14px', borderRadius: 99, fontSize: 12, fontWeight: 600,
-                        cursor: 'pointer',
-                        border: `1.5px solid ${filter2026 === mode ? '#fff' : 'rgba(255,255,255,0.4)'}`,
-                        background: filter2026 === mode ? 'rgba(255,255,255,0.2)' : 'transparent',
-                        color: '#fff',
-                        transition: 'all 0.15s',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {mode === 'all' ? 'All Players' : mode === 'highlight' ? '2026 Players' : '2026 Focus'}
-                    </button>
-                  ))}
-                </div>
+                <FilterPills dark />
               </th>
               <th
                 colSpan={pairsCols}
@@ -679,9 +838,8 @@ function Leaderboard({ data, playerMatches, players }) {
               const isDimmed = filter2026 === 'highlight' && !isAttending
 
               return (
-                <>
+                <Fragment key={row.player}>
                 <tr
-                  key={row.player}
                   onClick={() => setExpanded(isExpanded ? null : row.player)}
                   onMouseEnter={() => setHovered(i)}
                   onMouseLeave={() => setHovered(null)}
@@ -743,7 +901,7 @@ function Leaderboard({ data, playerMatches, players }) {
                   })}
                 </tr>
                 {isExpanded && (
-                  <tr key={`${row.player}-form`} style={{ borderBottom: `1px solid ${G.border}` }}>
+                  <tr style={{ borderBottom: `1px solid ${G.border}` }}>
                     <td colSpan={cols.length} style={{ padding: '12px 16px', background: G.faint }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                         {groups.map((g, gi) => (
@@ -769,7 +927,7 @@ function Leaderboard({ data, playerMatches, players }) {
                     </td>
                   </tr>
                 )}
-                </>
+                </Fragment>
               )
             })}
           </tbody>
