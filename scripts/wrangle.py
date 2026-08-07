@@ -126,6 +126,16 @@ roster_pid    = dict(zip(players["name"], players["player_id"]))
 
 all_players = sorted(set(pm["player"].unique()) | set(roster_names))
 
+# Matches link players by name, not player_id. If someone with match history
+# gets renamed in the Players sheet (or NAME_MAP) without the old name being
+# added to NAME_MAP, the old and new names silently become two different
+# leaderboard entries instead of merging. Surface that loudly instead.
+orphaned = sorted(set(pm["player"].unique()) - set(roster_names))
+if orphaned:
+    print(f"WARNING: {len(orphaned)} name(s) appear in Matches but not in the Players sheet — "
+          f"they'll show up as separate leaderboard rows: {', '.join(orphaned)}")
+    print(f"         If one of these was renamed, add the old name -> new name to NAME_MAP above.")
+
 # ── Format categories ─────────────────────────────────────────────────────
 SCRAMBLE_FMTS = {"Texas Scramble"}
 PAIRS_FMTS    = {"Fourball", "2x2 Scramble"}

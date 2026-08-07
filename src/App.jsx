@@ -30,6 +30,13 @@ const TEAM_COLORS    = { Europe: G.blue,    USA: G.red }
 const TEAM_BG        = { Europe: G.blueLight, USA: G.redLight }
 const CHART_PALETTE  = ['#1b4332','#c9a84c','#1e3a5f','#9b1c1c','#4a7c59','#b5883e','#2c5282','#7b1d1d','#6b9e80']
 
+// Match format categories — kept in one place so a new format only needs
+// updating here, not hunted down across every component that filters by it.
+const SCRAMBLE_FORMAT = 'Texas Scramble'
+const SINGLES_FORMATS = new Set(['Singles'])
+const TEAM_FORMATS    = new Set(['Fourball', '2x2 Scramble'])
+const NO_SCORE_FORMATS = new Set(['Texas Scramble', 'Kingpin']) // no match-play score to rank by
+
 // ── Shared styles ──────────────────────────────────────────────────────────
 const shadow = '0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06)'
 const shadowHover = '0 2px 6px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.1)'
@@ -1054,7 +1061,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, players }) {
   const fullName = playerInfo ? `${playerInfo.first_name} ${playerInfo.last_name}` : selected
 
   // Head-to-head matches only (excludes Texas Scramble)
-  const myMatches = playerMatches.filter(m => m.player === selected && m.format !== 'Texas Scramble')
+  const myMatches = playerMatches.filter(m => m.player === selected && m.format !== SCRAMBLE_FORMAT)
 
   const h2hPts = myMatches.reduce((s, m) => s + (m.pts || 0), 0)
   const h2hPPG = myMatches.length > 0 ? h2hPts / myMatches.length : 0
@@ -1639,7 +1646,7 @@ function PartnershipStats({ playerMatches, leaderboard }) {
 
   const pairMap = {}
   playerMatches
-    .filter(m => m.format !== 'Texas Scramble')
+    .filter(m => m.format !== SCRAMBLE_FORMAT)
     .forEach(m => {
       (m.partners || []).forEach(partner => {
         if (m.player > partner) return
@@ -1764,7 +1771,7 @@ function PartnershipStats({ playerMatches, leaderboard }) {
 function BiggestWins({ playerMatches, holidays }) {
   const matchMap = {}
   for (const m of playerMatches) {
-    if (m.format === 'Texas Scramble' || m.format === 'Kingpin' || !m.score) continue
+    if (NO_SCORE_FORMATS.has(m.format) || !m.score) continue
     const key = `${m.holiday_id}-${m.match_id}`
     if (!matchMap[key]) {
       matchMap[key] = {
@@ -1890,14 +1897,12 @@ const ScatterDot = (props) => {
 
 function PlayerScatter({ playerMatches, leaderboard }) {
   const isMobile = useWindowWidth() < 640
-  const SINGLES_FMTS = new Set(['Singles'])
-  const TEAM_FMTS    = new Set(['Fourball', '2x2 Scramble'])
   const scoreOf = r => r === 'Win' ? 1 : r === 'Loss' ? -1 : 0
 
   const data = leaderboard.map(p => {
     const ms = playerMatches.filter(m => m.player === p.player)
-    const sx = ms.filter(m => SINGLES_FMTS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
-    const tx = ms.filter(m => TEAM_FMTS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
+    const sx = ms.filter(m => SINGLES_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
+    const tx = ms.filter(m => TEAM_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
     return { player: p.player, team: p.team, x: sx, y: tx }
   })
 
@@ -2024,7 +2029,7 @@ const SCRAMBLE_COLOR = {
 }
 
 function FormDot({ match, isHovered, onEnter, onLeave, teamOf = {} }) {
-  const isScramble = match.format === 'Texas Scramble'
+  const isScramble = match.format === SCRAMBLE_FORMAT
   let bg, border, color, label
 
   if (isScramble) {
