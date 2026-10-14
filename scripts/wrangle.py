@@ -40,18 +40,21 @@ for df in (matchdays, matches, green_jkts):
 # Name normalisation
 NAME_MAP = {}  # add any spelling variants here if needed
 
-def norm(name):
-    return NAME_MAP.get(name, name)
-
-# Apply to every name-keyed column, not just Matches, so a rename carries
-# across all stats (and the roster) instead of zeroing some of them out.
-players["name"]      = players["name"].map(norm)
-green_jkts["player"] = green_jkts["player"].map(norm)
-matchdays["DOTD"]    = matchdays["DOTD"].map(norm)
-for col in ("long_drive", "nearest_pin", "team_1_captain", "team_2_captain"):
-    holidays[col] = holidays[col].map(norm)
-
 SLOTS = ["a", "b", "c", "d"]
+
+# Every name-keyed column in the workbook. NAME_MAP is applied to all of them
+# so a rename carries across every stat, and the same table drives the
+# unknown-name warning at the end of the run.
+NAME_COLS = {
+    "Players":       (players,    ["name"]),
+    "Matches":       (matches,    [f"player_{s}" for s in SLOTS]),
+    "Green Jackets": (green_jkts, ["player"]),
+    "Matchdays":     (matchdays,  ["DOTD"]),
+    "Holidays":      (holidays,   ["long_drive", "nearest_pin", "team_1_captain", "team_2_captain"]),
+}
+for df, cols in NAME_COLS.values():
+    for col in cols:
+        df[col] = df[col].map(lambda n: NAME_MAP.get(n, n))
 
 # ── Fix Tie points in source data ─────────────────────────────────────────
 # Tie/A/S matches have 0 pts in the sheet — correct to 0.5 per participant
@@ -71,7 +74,7 @@ for _, m in matches.iterrows():
     # Gather all filled slots for this row
     filled = {}
     for s in SLOTS:
-        p = norm(str(m.get(f"player_{s}", "")).strip())
+        p = str(m.get(f"player_{s}", "")).strip()
         t = str(m.get(f"team_{s}", "")).strip()
         pts = float(m.get(f"points_{s}", 0) or 0)
         bi  = int(0 if pd.isna(m.get(f"birdie_{s}", 0)) else (m.get(f"birdie_{s}", 0) or 0))
@@ -140,16 +143,12 @@ all_players = sorted(set(pm["player"].unique()) | set(roster_names))
 # the Players sheet without the old name being added to NAME_MAP, their old
 # stats silently split off or drop to zero. Collect those names and report
 # them at the end of the run, where they won't scroll off-screen.
-sheet_names = {
-    "Matches":       set(pm["player"]),
-    "Green Jackets": set(green_jkts["player"]),
-    "Matchdays":     set(matchdays["DOTD"]),
-    "Holidays":      set(holidays[["long_drive", "nearest_pin",
-                                   "team_1_captain", "team_2_captain"]].values.ravel()),
-}
-orphaned = {sheet: sorted(n for n in names - set(roster_names) if isinstance(n, str) and n)
-            for sheet, names in sheet_names.items()}
-orphaned = {sheet: names for sheet, names in orphaned.items() if names}
+roster   = set(roster_names)
+orphaned = {}
+for sheet, (df, cols) in NAME_COLS.items():
+    unknown = sorted(n for n in set(df[cols].values.ravel()) - roster if isinstance(n, str) and n)
+    if unknown:
+        orphaned[sheet] = unknown
 
 # ── Format categories ─────────────────────────────────────────────────────
 SCRAMBLE_FMTS = {"Texas Scramble"}

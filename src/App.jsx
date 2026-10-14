@@ -586,15 +586,12 @@ function Leaderboard({ data, playerMatches, players }) {
   const cols = [...LB_BASE, ...(pairsOpen ? LB_PAIRS_EXPANDED : LB_PAIRS_COMBINED), ...LB_TAIL]
   const mobileDetailCols = [...LB_PAIRS_COMBINED, ...LB_TAIL]
 
-  // Record strings ("12/5 (3 ties)", "4/2/1/0") sort by their leading number
-  // (wins / 1st places) — sorting them as text would put "9/…" above "12/…".
-  const sortVal = (row) => sortKey.endsWith('_record') ? parseInt(row[sortKey]) : row[sortKey]
-
   const sorted = [...data].sort((a, b) => {
-    const av = sortVal(a), bv = sortVal(b)
+    const av = a[sortKey], bv = b[sortKey]
     if (av == null) return 1
     if (bv == null) return -1
-    const cmp = typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))
+    // numeric: true so record strings like "12/5 (3 ties)" sort above "9/2 (1 ties)"
+    const cmp = typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv), undefined, { numeric: true })
     return sortAsc ? cmp : -cmp
   })
 
@@ -1164,7 +1161,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, players }) {
     <Card id={`player-${selected}`}>
       {/* player selector */}
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 28, paddingBottom: 20, borderBottom: `1px solid ${G.border}` }}>
-        {leaderboard.filter(p => !p.new_2026).map(p => (
+        {leaderboard.map(p => (
           <button
             key={p.player}
             onClick={() => setSelected(p.player)}
@@ -1909,7 +1906,7 @@ function PlayerScatter({ playerMatches, leaderboard }) {
   const isMobile = useWindowWidth() < 640
   const scoreOf = r => r === 'Win' ? 1 : r === 'Loss' ? -1 : 0
 
-  const data = leaderboard.filter(p => !p.new_2026).map(p => {
+  const data = leaderboard.map(p => {
     const ms = playerMatches.filter(m => m.player === p.player)
     const sx = ms.filter(m => SINGLES_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
     const tx = ms.filter(m => TEAM_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
@@ -2205,6 +2202,9 @@ export default function App() {
     </div>
   )
 
+  // Roster-only 2026 players (no matches yet) belong on the leaderboard only.
+  const ranked = data.leaderboard.filter(p => !p.new_2026)
+
   return (
     <div style={{ maxWidth: 1280, margin: '0 auto', padding: isMobile ? '20px 16px 60px' : '40px 28px 80px' }}>
       <FloatingNav />
@@ -2217,25 +2217,25 @@ export default function App() {
       <RivalryChart rivalry={data.rivalry} rivalryByDay={data.rivalry_by_day} rivalryByFormat={data.rivalry_by_format} holidays={data.holidays} />
 
       <SectionTitle id="sec-spotlight">Player Spotlight</SectionTitle>
-      <PlayerSpotlight leaderboard={data.leaderboard} playerMatches={data.player_matches} players={data.players} />
+      <PlayerSpotlight leaderboard={ranked} playerMatches={data.player_matches} players={data.players} />
 
       <SectionTitle id="sec-profile">Player Profile & Green Towel</SectionTitle>
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: 20 }}>
-        <PlayerScatter playerMatches={data.player_matches} leaderboard={data.leaderboard} />
+        <PlayerScatter playerMatches={data.player_matches} leaderboard={ranked} />
         <GreenJackets greenJackets={data.green_jackets} holidays={data.holidays} />
       </div>
 
       <SectionTitle id="sec-partnerships">Best Partnerships</SectionTitle>
-      <PartnershipStats playerMatches={data.player_matches} leaderboard={data.leaderboard} />
+      <PartnershipStats playerMatches={data.player_matches} leaderboard={ranked} />
 
       <SectionTitle id="sec-wins">Biggest Wins</SectionTitle>
       <BiggestWins playerMatches={data.player_matches} holidays={data.holidays} />
 
       <SectionTitle id="sec-birdies">Birdies</SectionTitle>
-      <BirdiesChart leaderboard={data.leaderboard} birdieByHoliday={data.birdie_by_holiday} holidays={data.holidays} />
+      <BirdiesChart leaderboard={ranked} birdieByHoliday={data.birdie_by_holiday} holidays={data.holidays} />
 
       <SectionTitle id="sec-awards">Award Leaderboards</SectionTitle>
-      <AwardLeaderboards leaderboard={data.leaderboard} awards={data.awards} />
+      <AwardLeaderboards leaderboard={ranked} awards={data.awards} />
 
       <SectionTitle id="sec-dotd">Holiday Awards & Dick of the Day</SectionTitle>
       <Awards awards={data.awards} />
