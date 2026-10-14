@@ -84,9 +84,13 @@ function Card({ children, style, id, noPad }) {
     hidden.forEach(el => { el.dataset.prevDisplay = el.style.display; el.style.display = 'none' })
     const prevRadius = ref.current.style.borderRadius
     ref.current.style.borderRadius = '0'
-    const canvas = await html2canvas(ref.current, { scale: 2, backgroundColor: G.card, useCORS: true })
-    ref.current.style.borderRadius = prevRadius
-    hidden.forEach(el => { el.style.display = el.dataset.prevDisplay || ''; delete el.dataset.prevDisplay })
+    let canvas
+    try {
+      canvas = await html2canvas(ref.current, { scale: 2, backgroundColor: G.card, useCORS: true })
+    } finally {
+      ref.current.style.borderRadius = prevRadius
+      hidden.forEach(el => { el.style.display = el.dataset.prevDisplay || ''; delete el.dataset.prevDisplay })
+    }
     const a = document.createElement('a')
     a.href = canvas.toDataURL('image/png')
     a.download = (id || 'card') + '.png'
@@ -582,8 +586,12 @@ function Leaderboard({ data, playerMatches, players }) {
   const cols = [...LB_BASE, ...(pairsOpen ? LB_PAIRS_EXPANDED : LB_PAIRS_COMBINED), ...LB_TAIL]
   const mobileDetailCols = [...LB_PAIRS_COMBINED, ...LB_TAIL]
 
+  // Record strings ("12/5 (3 ties)", "4/2/1/0") sort by their leading number
+  // (wins / 1st places) — sorting them as text would put "9/…" above "12/…".
+  const sortVal = (row) => sortKey.endsWith('_record') ? parseInt(row[sortKey]) : row[sortKey]
+
   const sorted = [...data].sort((a, b) => {
-    const av = a[sortKey], bv = b[sortKey]
+    const av = sortVal(a), bv = sortVal(b)
     if (av == null) return 1
     if (bv == null) return -1
     const cmp = typeof av === 'number' ? av - bv : String(av).localeCompare(String(bv))
@@ -847,7 +855,7 @@ function Leaderboard({ data, playerMatches, players }) {
               return (
                 <Fragment key={row.player}>
                 <tr
-                  onClick={() => setExpanded(isExpanded ? null : row.player)}
+                  onClick={() => !isNew2026 && setExpanded(isExpanded ? null : row.player)}
                   onMouseEnter={() => setHovered(i)}
                   onMouseLeave={() => setHovered(null)}
                   style={{
@@ -949,7 +957,9 @@ function RivalryChart({ rivalry, rivalryByDay, rivalryByFormat, holidays }) {
   const isMobile = useWindowWidth() < 640
   const fmtLabel = (dateStr) => {
     const d = new Date(dateStr)
-    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+    // Date-only strings parse as UTC midnight, so format in UTC too or viewers
+    // west of the UK see the previous day.
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' })
   }
 
   // Per-day bar data, with holiday separator label
@@ -1056,7 +1066,7 @@ function PlayerSpotlight({ leaderboard, playerMatches, players }) {
   const tileLeaveTimer = useRef(null)
   const isMobile = useWindowWidth() < 640
   const player = leaderboard.find(p => p.player === selected)
-  const rank   = leaderboard.findIndex(p => p.player === selected) + 1
+  const rank   = player?.rank
   const playerInfo = (players || []).find(p => p.name === selected)
   const fullName = playerInfo ? `${playerInfo.first_name} ${playerInfo.last_name}` : selected
 
@@ -1899,7 +1909,7 @@ function PlayerScatter({ playerMatches, leaderboard }) {
   const isMobile = useWindowWidth() < 640
   const scoreOf = r => r === 'Win' ? 1 : r === 'Loss' ? -1 : 0
 
-  const data = leaderboard.map(p => {
+  const data = leaderboard.filter(p => !p.new_2026).map(p => {
     const ms = playerMatches.filter(m => m.player === p.player)
     const sx = ms.filter(m => SINGLES_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)
     const tx = ms.filter(m => TEAM_FORMATS.has(m.format)).reduce((s, m) => s + scoreOf(m.result), 0)

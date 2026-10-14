@@ -40,6 +40,17 @@ for df in (matchdays, matches, green_jkts):
 # Name normalisation
 NAME_MAP = {}  # add any spelling variants here if needed
 
+def norm(name):
+    return NAME_MAP.get(name, name)
+
+# Apply to every name-keyed column, not just Matches, so a rename carries
+# across all stats (and the roster) instead of zeroing some of them out.
+players["name"]      = players["name"].map(norm)
+green_jkts["player"] = green_jkts["player"].map(norm)
+matchdays["DOTD"]    = matchdays["DOTD"].map(norm)
+for col in ("long_drive", "nearest_pin", "team_1_captain", "team_2_captain"):
+    holidays[col] = holidays[col].map(norm)
+
 SLOTS = ["a", "b", "c", "d"]
 
 # ── Fix Tie points in source data ─────────────────────────────────────────
@@ -60,8 +71,7 @@ for _, m in matches.iterrows():
     # Gather all filled slots for this row
     filled = {}
     for s in SLOTS:
-        p = NAME_MAP.get(str(m.get(f"player_{s}", "")).strip(),
-                         str(m.get(f"player_{s}", "")).strip())
+        p = norm(str(m.get(f"player_{s}", "")).strip())
         t = str(m.get(f"team_{s}", "")).strip()
         pts = float(m.get(f"points_{s}", 0) or 0)
         bi  = int(0 if pd.isna(m.get(f"birdie_{s}", 0)) else (m.get(f"birdie_{s}", 0) or 0))
@@ -126,15 +136,20 @@ roster_pid    = dict(zip(players["name"], players["player_id"]))
 
 all_players = sorted(set(pm["player"].unique()) | set(roster_names))
 
-# Matches link players by name, not player_id. If someone with match history
-# gets renamed in the Players sheet (or NAME_MAP) without the old name being
-# added to NAME_MAP, the old and new names silently become two different
-# leaderboard entries instead of merging. Surface that loudly instead.
-orphaned = sorted(set(pm["player"].unique()) - set(roster_names))
-if orphaned:
-    print(f"WARNING: {len(orphaned)} name(s) appear in Matches but not in the Players sheet — "
-          f"they'll show up as separate leaderboard rows: {', '.join(orphaned)}")
-    print(f"         If one of these was renamed, add the old name -> new name to NAME_MAP above.")
+# Every sheet links players by name, not player_id. If someone gets renamed in
+# the Players sheet without the old name being added to NAME_MAP, their old
+# stats silently split off or drop to zero. Collect those names and report
+# them at the end of the run, where they won't scroll off-screen.
+sheet_names = {
+    "Matches":       set(pm["player"]),
+    "Green Jackets": set(green_jkts["player"]),
+    "Matchdays":     set(matchdays["DOTD"]),
+    "Holidays":      set(holidays[["long_drive", "nearest_pin",
+                                   "team_1_captain", "team_2_captain"]].values.ravel()),
+}
+orphaned = {sheet: sorted(n for n in names - set(roster_names) if isinstance(n, str) and n)
+            for sheet, names in sheet_names.items()}
+orphaned = {sheet: names for sheet, names in orphaned.items() if names}
 
 # ── Format categories ─────────────────────────────────────────────────────
 SCRAMBLE_FMTS = {"Texas Scramble"}
@@ -449,3 +464,10 @@ print()
 print("Rivalry:")
 for r in rivalry:
     print(f"  H{r['holiday_id']} {r['country']:10} EUR {r['europe_pts']} - USA {r['usa_pts']}  => {r['winner']}")
+
+if orphaned:
+    print()
+    print("WARNING: names not found in the Players sheet - their stats won't line up:")
+    for sheet, names in orphaned.items():
+        print(f"  {sheet}: {', '.join(names)}")
+    print("  If one of these was renamed, add the old name -> new name to NAME_MAP.")
